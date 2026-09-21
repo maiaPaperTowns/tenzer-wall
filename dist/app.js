@@ -137,7 +137,20 @@
       birdType = (lastBirdType + 1 + Math.floor(Math.random() * 5)) % 6;
       lastBirdType = birdType;
     }
-    scenes.push({ kind: c.meaning, x: c.x, y: c.y, life: 0, max: c.meaning === 'flower' ? 9 : c.meaning === 'sun' ? 8 : 10, hue: c.hue, birdType });
+    const currentScene = [...scenes].reverse().find(scene => scene.life >= 0 && scene.life < scene.max);
+    const minimumViewingTime = 7;
+    const crossfadeTime = 3;
+    const wait = currentScene ? Math.max(0, minimumViewingTime - currentScene.life) : 0;
+    if (currentScene) {
+      // Preserve enough time to understand the current painting, then begin a
+      // slow crossfade exactly as the queued scene starts to emerge.
+      currentScene.max = Math.min(currentScene.max, currentScene.life + wait + crossfadeTime);
+    }
+    scenes.push({
+      kind: c.meaning, x: c.x, y: c.y,
+      life: -wait, max: c.meaning === 'flower' ? 16 : c.meaning === 'sun' ? 15 : 17,
+      hue: c.hue, birdType
+    });
     const count = reduced ? 18 : c.meaning === 'flower' ? 72 : 54;
     for (let i = 0; i < count; i++) {
       const a = rand(0, Math.PI * 2), speed = rand(c.size * .18, c.size * .82);
@@ -317,6 +330,13 @@
     return value - Math.floor(value);
   }
 
+  function sceneOpacity(scene) {
+    if (scene.life < 0) return 0;
+    const enter = 1 - Math.pow(1 - clamp(scene.life / 1.8, 0, 1), 3);
+    const exit = 1 - Math.pow(1 - clamp((scene.max - scene.life) / 3, 0, 1), 3);
+    return Math.min(enter, exit);
+  }
+
   function drawLightningBolt(seed, intensity) {
     const points = [{ x: w * (.28 + seeded(seed) * .44), y: -12 }];
     const segments = 13;
@@ -350,7 +370,8 @@
     const dt = Math.min((now - last) / 1000, .04); last = now;
     ctx.clearRect(0, 0, w, h);
     scenes.forEach(s => {
-      s.life += dt; const fade = Math.sin(Math.min(1, s.life / s.max) * Math.PI);
+      s.life += dt; const fade = sceneOpacity(s);
+      if (s.life < 0) return;
       if (s.kind === 'thunder') {
         if (!thunderPainting.complete || !thunderPainting.width) return;
         const imageRatio = thunderPainting.width / thunderPainting.height, screenRatio = w / h;
