@@ -2,7 +2,7 @@
 
 An interactive, full-screen generative artwork exploring how brush-written kanji can act as portals into animated landscape scenes. Characters drift through a quiet paper-like canvas; selecting one transforms the entire display into a corresponding visual world.
 
-**[Open the live installation →](https://tenzer-kanji-garden.lmhuong-06.chatgpt.site)**
+**[Open the live installation →](https://maiapapertowns.github.io/tenzer-wall-site/)**
 
 > Prototype 01 · DePauw Student Research Associate project · Designed for a large-format Windows display and adaptable to desktop, tablet, and touch installations.
 
@@ -107,7 +107,7 @@ For installation use, launch a current Chromium-based browser with `F11` or kios
 
 The production build is deployed as a static site:
 
-- **Live:** [tenzer-kanji-garden.lmhuong-06.chatgpt.site](https://tenzer-kanji-garden.lmhuong-06.chatgpt.site)
+- **Live:** [maiapapertowns.github.io/tenzer-wall-site](https://maiapapertowns.github.io/tenzer-wall-site/)
 - **Document root:** `dist/`
 - **Configuration:** `.openai/hosting.json`
 
