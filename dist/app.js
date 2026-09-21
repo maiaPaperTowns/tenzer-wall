@@ -87,7 +87,8 @@
       .sort((a, b) => spawnCounts[a.index] - spawnCounts[b.index]);
     const { type, index:typeIndex } = candidates[0];
     spawnCounts[typeIndex]++;
-    const size = clamp(Math.min(w, h) * rand(.105, .17), 72, 190);
+    const wallScale = w / Math.max(h, 1) > 2.4 ? 1.18 : 1;
+    const size = clamp(Math.min(w, h) * rand(.105, .17) * wallScale, 84, 360);
     const y = startY ?? -size * .7;
     const margin = Math.min(size * .78, w * .24);
     let x = w * .5, bestScore = -Infinity;
@@ -212,7 +213,9 @@
     for (const c of characters) {
       if (c.state !== 'falling') continue;
       const d = Math.hypot(c.x - x, c.y - y);
-      if (d < c.size * .82 && d < distance) { best = c; distance = d; }
+      // Infrared wall input is less precise than a phone. Keep the visual form
+      // untouched while giving every character a deliberately generous hit area.
+      if (d < c.size * 1.02 && d < distance) { best = c; distance = d; }
     }
     if (best) burst(best);
     else ripples.push({ x, y, r: 6, alpha: .28, hue: 205 });
@@ -492,12 +495,51 @@
   async function start() {
     if (started) return; started = true; intro.classList.add('hidden');
     await loadKanjiFonts();
-    spawnCharacter(h * .16); spawnCharacter(h * .43); spawnCharacter(h * .72);
+    const initialCount = clamp(Math.round(w / 1600) + 2, 3, 7);
+    for (let i = 0; i < initialCount; i++) {
+      spawnCharacter(h * (.1 + (i / Math.max(1, initialCount - 1)) * .78));
+    }
+  }
+
+  function bindWallInput() {
+    if (window.Hammer) {
+      const manager = new Hammer.Manager(canvas, {
+        touchAction: 'none',
+        inputClass: window.PointerEvent ? Hammer.PointerEventInput : undefined
+      });
+      const tap = new Hammer.Tap({
+        event: 'walltap', pointers: 1, taps: 1,
+        time: 520, threshold: 30, posThreshold: 44
+      });
+      const press = new Hammer.Press({
+        event: 'wallpress', pointers: 1,
+        time: 330, threshold: 34
+      });
+      manager.add([tap, press]);
+
+      let lastActivation = -Infinity;
+      manager.on('walltap wallpress', event => {
+        const now = performance.now();
+        // Some infrared frames can satisfy both recognizers. Treat them as one
+        // intentional selection rather than opening the same scene twice.
+        if (now - lastActivation < 220) return;
+        lastActivation = now;
+        if (!started) start();
+        interact(event.center.x, event.center.y);
+      });
+      return;
+    }
+
+    // The artwork remains usable if the gesture library cannot be loaded.
+    canvas.addEventListener('pointerup', event => {
+      if (!started) start();
+      interact(event.clientX, event.clientY);
+    });
   }
 
   addEventListener('resize', resize); resize(); requestAnimationFrame(frame);
   begin.addEventListener('click', start);
   soundButton.addEventListener('click', toggleSound);
-  canvas.addEventListener('pointerdown', e => { if (!started) start(); interact(e.clientX, e.clientY); });
+  bindWallInput();
   addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (!started) start(); else { const c = characters.find(c => c.state === 'falling'); if (c) burst(c); } } });
 })();
