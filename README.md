@@ -26,17 +26,31 @@ The current vocabulary contains seven concrete natural phenomena:
 
 - Kanji are distributed through responsive lanes with balanced concept frequency.
 - Pairwise spacing correction prevents falling characters from visually sticking together.
-- Pointer input activates the nearest character within its hit radius.
+- Hammer.js normalizes single-touch input with generous movement thresholds for the infrared sensor.
+- Both a short tap and a deliberate press activate the nearest character within an enlarged hit radius.
+- Duplicate gesture suppression prevents one physical contact from opening the same scene twice.
 - `Enter` and `Space` provide an equivalent keyboard interaction.
 - The installation begins behind a restrained onboarding veil and reduces UI prominence after the first interaction.
 - Sound is optional and only starts after explicit user input, respecting browser autoplay policies.
 
+## Target installation
+
+| Property | Specification |
+| --- | --- |
+| Host | Windows PC running Chrome |
+| Logical canvas | **7680 × 2160** |
+| Video topology | Two 4K outputs; each output drives a 2×2 grid of 1920×1080 panels |
+| Input | Infrared touch, up to 32 simultaneous contacts |
+| Initial interaction level | Single touch, intentionally optimized before multi-touch and gestures |
+
+At the wall's 32:9 aspect ratio, character size and starting density increase automatically while retaining wide separation. Touch targets are larger than their visible glyphs to compensate for infrared imprecision. The current prototype avoids drag, kinetic scrolling, and edge-dependent controls; those patterns are unreliable on this hardware. Multi-touch recognizers can be introduced through the existing Hammer.js manager after single-touch field testing.
+
 ## Technical architecture
 
-The prototype is intentionally dependency-free: it is a static HTML/CSS/JavaScript application built on the Canvas 2D and Web Audio APIs.
+The prototype is a buildless static HTML/CSS/JavaScript application built on Canvas 2D and Web Audio. Hammer.js provides a focused gesture-recognition boundary while the visual simulation remains framework-free.
 
 ```text
-Input (pointer / keyboard)
+Input (Hammer.js / Pointer Events fallback / keyboard)
           │
           ▼
 Character scheduler ──► spatial collision correction
@@ -87,7 +101,7 @@ python3 -m http.server 4175
 
 Then open [http://127.0.0.1:4175](http://127.0.0.1:4175).
 
-For installation use, launch a current Chromium-based browser in full-screen or kiosk mode. Touch input is handled through Pointer Events, so the same code path supports a mouse, touch display, or pen.
+For installation use, launch a current Chromium-based browser with `F11` or kiosk mode. Hammer.js consumes Pointer Events when available, while the fallback keeps the same canvas usable with a mouse, touch display, or pen if the library cannot load.
 
 ## Deployment
 
