@@ -81,8 +81,6 @@ Kanji use the locally hosted **Aoyagi Kouzan** brush typeface with platform call
 
 ```text
 .
-├── .openai/
-│   └── hosting.json       # Static hosting configuration
 └── dist/
     ├── index.html         # Semantic shell and installation controls
     ├── styles.css         # Responsive presentation and accessibility states
@@ -109,7 +107,7 @@ The production build is deployed as a static site:
 
 - **Live:** [maiapapertowns.github.io/tenzer-wall-site](https://maiapapertowns.github.io/tenzer-wall-site/)
 - **Document root:** `dist/`
-- **Configuration:** `.openai/hosting.json`
+- **Public deployment:** [`maiaPaperTowns/tenzer-wall-site`](https://github.com/maiaPaperTowns/tenzer-wall-site)
 
 ## Evaluation plan
 
