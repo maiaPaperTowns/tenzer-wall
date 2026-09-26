@@ -27,7 +27,7 @@ try {
    for(const entry of entries)for(let i=0;i<(entry.behavior==='glow'?entry.variants.length:entry.behavior==='fly'?entry.crops.length:entry.images.length);i++){
      window.drawStockScene(g,{entry,life:5,x:700,y:350,stockVariant:i},1,1400,700,false);count++;
    }return count;
- });assert.equal(variants,6);
+ });assert.equal(variants,14);
  await page.screenshot({path:'/private/tmp/tenzer-prototype2.png'});
  // An entirely new dataset works with unchanged engine code and an image glyph.
  const custom={version:1,entries:[{id:'snow-demo',meaning:'Snow demo',kanjiAsset:'glyph.svg',behavior:'reveal',assets:['assets/stock/holy-cross.jpg'],duration:8,sound:{src:'demo.mp3',volume:.25}}]};
