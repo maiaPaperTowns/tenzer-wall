@@ -13,9 +13,9 @@ for(const id of ['flower','mountain','bird','sun']){
    const g=document.querySelector('canvas').getContext('2d');g.clearRect(0,0,innerWidth,innerHeight);
    const s={entry:testEntries.find(e=>e.id===id),life,x:innerWidth*.5,y:innerHeight*.5,stockVariant:0};
    drawStockScene(g,s,1,innerWidth,innerHeight,false);
-   return {flowers:s.flowers?.length,layers:s.entry.layers?.length};
+   return {flowers:s.flowers?.length,layers:s.entry.layers?.length,quadrants:s.flowers?new Set(s.flowers.map(f=>(f.x>innerWidth/2?1:0)+(f.y>innerHeight/2?2:0))).size:0};
   },{id,life});
-  if(id==='flower')assert.ok(stats.flowers<=24);if(id==='mountain')assert.equal(stats.layers,4);
+  if(id==='flower'){assert.ok(stats.flowers>=90&&stats.flowers<=150);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
   await page.screenshot({path:'/private/tmp/motion-'+id+'-'+life+'.png'});
  }
 }
@@ -46,6 +46,6 @@ const motion=await page.evaluate(()=>{
  const s1={entry:sun,life:3},s2={entry:sun,life:3};drawStockScene(g,s1,1,1400,800,false);drawStockScene(g,s2,1,1400,800,false);g.drawImage=native;
  return {rightward:second[0].x>first[0].x,wingMoves:Math.abs(second[1].b-first[1].b)>.01,sameSun:s1.stockVariant===s2.stockVariant};
 });assert.ok(motion.rightward&&motion.wingMoves&&motion.sameSun);
-assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,flowerLimit:24,mountainLayers:4,...motion}));
+assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,flowerLimit:150,fullScreenFlowers:true,mountainLayers:7,...motion}));
 }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
