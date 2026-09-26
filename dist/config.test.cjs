@@ -3,7 +3,7 @@ const {validate}=require('./config-loader.js');
 const raw=require('./config.json'), base='https://example.test/tenzer/config.json';
 const change=fn=>{const copy=structuredClone(raw);fn(copy);return copy};
 assert.equal(validate(raw,base).entries.length,4);
-assert.equal(validate(raw,base).entries[0].assets[0],'https://example.test/tenzer/assets/stock/azalea.jpg');
+assert.equal(validate(raw,base).entries[0].assets[0],'https://example.test/tenzer/assets/derived/flower-atlas-v2.png');
 for(const edit of [c=>c.version=2,c=>c.entries=[],c=>c.entries[1].id=c.entries[0].id,c=>c.entries[0].behavior='unknown',c=>c.entries[0].assets=['javascript:bad'],c=>c.entries[0].duration=-1,c=>c.entries[0].crops[0].asset=99,c=>c.entries[0].crops[0].crop=[.9,0,.2,1],c=>c.entries[0].sound.volume=3])assert.throws(()=>validate(change(edit),base));
 assert.equal(validate(change(c=>c.entries.push({...c.entries[3],id:'snow',glyph:'雪',meaning:'Snow'})),base).entries.length,5);
 assert.equal(validate(change(c=>c.entries.push({enabled:false})),base).entries.length,4);
