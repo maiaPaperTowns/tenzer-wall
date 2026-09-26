@@ -22,6 +22,20 @@ for(const id of ['flower','mountain','bird','sun']){
 const alpha=await page.evaluate(()=>{
  const img=testEntries[0].images[0],c=document.createElement('canvas');c.width=img.width;c.height=img.height;const g=c.getContext('2d');g.drawImage(img,0,0);return g.getImageData(0,0,1,1).data[3];
 });assert.equal(alpha,0);
+for(const variant of [1,2]) {
+ await page.evaluate(variant=>{
+  const g=document.querySelector('canvas').getContext('2d');g.clearRect(0,0,innerWidth,innerHeight);
+  drawStockScene(g,{entry:testEntries.find(e=>e.id==='bird'),life:5,stockVariant:variant},1,innerWidth,innerHeight,false);
+ },variant);
+ await page.screenshot({path:'/private/tmp/motion-bird-variant-'+variant+'.png'});
+}
+const petalsCheck=await page.evaluate(()=>{
+ const entry=testEntries.find(e=>e.id==='flower'),c=document.createElement('canvas');c.width=1400;c.height=800;const g=c.getContext('2d');
+ let petalDraws=0;const native=g.drawImage;g.drawImage=function(img,...args){if(img.width===64&&img.height===88)petalDraws++;return native.call(this,img,...args)};
+ drawStockScene(g,{entry,life:5,x:700,y:400},1,1400,800,false);const moving=petalDraws;
+ petalDraws=0;drawStockScene(g,{entry,life:5,x:700,y:400},1,1400,800,true);
+ return {moving,reduced:petalDraws};
+});assert.ok(petalsCheck.moving>0);assert.equal(petalsCheck.reduced,0);
 const motion=await page.evaluate(()=>{
  const g=document.querySelector('canvas').getContext('2d'),native=g.drawImage;
  const bird=testEntries.find(e=>e.id==='bird'),sun=testEntries.find(e=>e.id==='sun');
