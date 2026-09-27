@@ -15,7 +15,7 @@ for(const id of ['flower','mountain','bird','sun']){
    drawStockScene(g,s,1,innerWidth,innerHeight,false);
    return {flowers:s.flowers?.length,layers:s.entry.layers?.length,quadrants:s.flowers?new Set(s.flowers.map(f=>(f.x>innerWidth/2?1:0)+(f.y>innerHeight/2?2:0))).size:0};
   },{id,life});
-  if(id==='flower'){assert.ok(stats.flowers>=64&&stats.flowers<=84);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
+  if(id==='flower'){assert.ok(stats.flowers>=110&&stats.flowers<=140);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
   await page.screenshot({path:'/private/tmp/motion-'+id+'-'+life+'.png'});
  }
 }
@@ -45,13 +45,13 @@ const petalsCheck=await page.evaluate(()=>{
 const motion=await page.evaluate(()=>{
  const g=document.querySelector('canvas').getContext('2d'),native=g.drawImage;
  const bird=testEntries.find(e=>e.id==='bird'),sun=testEntries.find(e=>e.id==='sun');
- const transforms=[];g.drawImage=function(...args){const m=this.getTransform();transforms.push({x:m.e,a:m.a,b:m.b,c:m.c,d:m.d});return native.apply(this,args)};
+ const transforms=[];g.drawImage=function(...args){const m=this.getTransform();transforms.push({x:m.e,a:m.a,b:m.b,c:m.c,d:m.d,pixels:args[0].toDataURL?.()});return native.apply(this,args)};
  const b={...bird,options:{...bird.options,count:1}};
  drawStockScene(g,{entry:b,life:3,x:0,y:0,stockVariant:0},1,1400,800,false);const first=transforms.splice(0);
  drawStockScene(g,{entry:b,life:3.2,x:0,y:0,stockVariant:0},1,1400,800,false);const second=transforms.splice(0);
  const s1={entry:sun,life:3},s2={entry:sun,life:3};drawStockScene(g,s1,1,1400,800,false);drawStockScene(g,s2,1,1400,800,false);g.drawImage=native;
- return {rightward:second[0].x>first[0].x,wingMoves:Math.abs(second[1].b-first[1].b)>.01,sameSun:s1.stockVariant===s2.stockVariant};
+ return {rightward:second[0].x>first[0].x,wingMoves:first.length===1&&second.length===1&&second[0].pixels!==first[0].pixels,sameSun:s1.stockVariant===s2.stockVariant};
 });assert.ok(motion.rightward&&motion.wingMoves&&motion.sameSun);
-assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,singleFlowerLimit:84,fullScreenFlowers:true,mountainLayers:7,...motion}));
+assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,singleFlowerLimit:140,fullScreenFlowers:true,mountainLayers:7,...motion}));
 }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
