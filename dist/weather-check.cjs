@@ -29,8 +29,19 @@ const assert=require('node:assert/strict');
     if(before.phase!=='fall'||after.phase!=='impact'||Math.abs(before.dropX-after.x)>.001||Math.abs(before.dropY-after.y)>.001)return false;
    }return true;
   });
+  const rainVariants=await page.evaluate(()=>{
+   const entry=weatherEntries.find(e=>e.id==='rain'),c=document.createElement('canvas');c.width=700;c.height=400;const g=c.getContext('2d');
+   const render=(variant,life,reduced=false,fade=1)=>{g.clearRect(0,0,700,400);drawStockScene(g,{entry,life,stockVariant:variant},fade,700,400,reduced);return c.toDataURL()};
+   g.clearRect(0,0,700,400);const blank=c.toDataURL();
+   return entry.images.length===3&&new Set(entry.images.map((_,i)=>render(i,2))).size===3&&entry.images.every((_,i)=>render(i,1)!==render(i,2)&&render(i,1,true)===render(i,2,true)&&render(i,2,false,0)===blank);
+  });
+  assert.ok(rainVariants,'All three rain surfaces animate, remain stable in reduced motion, and exit cleanly');
+  for(let variant=1;variant<3;variant++){
+   await page.evaluate(variant=>{const g=document.querySelector('canvas').getContext('2d');g.clearRect(0,0,innerWidth,innerHeight);drawStockScene(g,{entry:weatherEntries.find(e=>e.id==='rain'),life:2,stockVariant:variant},1,innerWidth,innerHeight,false)},variant);
+   await page.screenshot({path:`/private/tmp/weather-rain-variant-${variant}.png`});
+  }
   assert.ok(impacts,'Drops must meet their own splash positions');
   assert.ok(result.reducedStable&&result.moving&&result.cleanExit);assert.equal(result.alpha,0);assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({...result,impactsAligned:impacts,errors}));
+  console.log(JSON.stringify({...result,rainVariants,impactsAligned:impacts,errors}));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
