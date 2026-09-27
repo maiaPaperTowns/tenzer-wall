@@ -22,7 +22,15 @@ const assert=require('node:assert/strict');
    const img=weatherEntries.find(e=>e.id==='rainbow').images[1];g.clearRect(0,0,700,400);g.drawImage(img,0,0,700,400);
    return {reducedStable,moving,cleanExit,alpha:g.getImageData(699,0,1,1).data[3]};
   });
+  const impacts=await page.evaluate(()=>{
+   for(let i=0;i<100;i++){
+    const initial=TenzerScenes.rainSample(i,0),hit=initial.flight-initial.age+initial.period;
+    const before=TenzerScenes.rainSample(i,hit-.0001),after=TenzerScenes.rainSample(i,hit+.0001);
+    if(before.phase!=='fall'||after.phase!=='impact'||Math.abs(before.dropX-after.x)>.001||Math.abs(before.dropY-after.y)>.001)return false;
+   }return true;
+  });
+  assert.ok(impacts,'Drops must meet their own splash positions');
   assert.ok(result.reducedStable&&result.moving&&result.cleanExit);assert.equal(result.alpha,0);assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({...result,errors}));
+  console.log(JSON.stringify({...result,impactsAligned:impacts,errors}));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
