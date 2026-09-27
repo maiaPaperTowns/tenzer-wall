@@ -15,7 +15,7 @@ for(const id of ['flower','mountain','bird','sun']){
    drawStockScene(g,s,1,innerWidth,innerHeight,false);
    return {flowers:s.flowers?.length,layers:s.entry.layers?.length,quadrants:s.flowers?new Set(s.flowers.map(f=>(f.x>innerWidth/2?1:0)+(f.y>innerHeight/2?2:0))).size:0};
   },{id,life});
-  if(id==='flower'){assert.ok(stats.flowers>=28&&stats.flowers<=36);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
+  if(id==='flower'){assert.ok(stats.flowers>=64&&stats.flowers<=84);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
   await page.screenshot({path:'/private/tmp/motion-'+id+'-'+life+'.png'});
  }
 }
@@ -52,6 +52,6 @@ const motion=await page.evaluate(()=>{
  const s1={entry:sun,life:3},s2={entry:sun,life:3};drawStockScene(g,s1,1,1400,800,false);drawStockScene(g,s2,1,1400,800,false);g.drawImage=native;
  return {rightward:second[0].x>first[0].x,wingMoves:Math.abs(second[1].b-first[1].b)>.01,sameSun:s1.stockVariant===s2.stockVariant};
 });assert.ok(motion.rightward&&motion.wingMoves&&motion.sameSun);
-assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,singleFlowerLimit:36,fullScreenFlowers:true,mountainLayers:7,...motion}));
+assert.deepEqual(errors,[]);console.log(JSON.stringify({errors,transparentBackground:true,singleFlowerLimit:84,fullScreenFlowers:true,mountainLayers:7,...motion}));
 }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
