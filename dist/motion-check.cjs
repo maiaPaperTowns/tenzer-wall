@@ -22,6 +22,12 @@ for(const id of ['flower','mountain','bird','sun']){
 const alpha=await page.evaluate(()=>{
  const img=testEntries.find(e=>e.id==='flower').images[0],c=document.createElement('canvas');c.width=img.width;c.height=img.height;const g=c.getContext('2d');g.drawImage(img,0,0);return g.getImageData(0,0,1,1).data[3];
 });assert.equal(alpha,0);
+const leaves=await page.evaluate(()=>{
+ const entry=testEntries.find(e=>e.id==='flower'),c=document.createElement('canvas');c.width=700;c.height=400;const g=c.getContext('2d');
+ const render=(leafCount,fade=1)=>{g.clearRect(0,0,700,400);drawStockScene(g,{entry:{...entry,options:{...entry.options,leafCount}},life:5,stockVariant:0},fade,700,400,false);return c.toDataURL()};
+ g.clearRect(0,0,700,400);const blank=c.toDataURL();
+ return {visible:render(22)!==render(0),cleanExit:render(22,0)===blank};
+});assert.ok(leaves.visible&&leaves.cleanExit);
 for(const variant of [1,2]) {
  await page.evaluate(variant=>{
   const g=document.querySelector('canvas').getContext('2d');g.clearRect(0,0,innerWidth,innerHeight);
