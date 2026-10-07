@@ -32,11 +32,11 @@ const assert=require('node:assert/strict');
   const lightning=await page.evaluate(()=>{
    const entry=weatherEntries.find(e=>e.id==='lightning'),c=document.createElement('canvas');c.width=700;c.height=400;const g=c.getContext('2d');
    const s={entry,life:.7,stockVariant:0};drawStockScene(g,s,1,700,400,false);const paths=s.bolts.length;
-   s.life=2.8;drawStockScene(g,s,1,700,400,false);const second=s.boltIndex;
+   s.life=1.85;drawStockScene(g,s,1,700,400,false);const second=s.boltIndex;
    drawStockScene(g,s,1,700,400,true);
    return {paths,second,reducedPaths:s.bolts.length,interval:entry.options.intervalSeconds};
   });
-  assert.equal(lightning.paths,12);assert.equal(lightning.second,1);assert.equal(lightning.reducedPaths,6);assert.equal(lightning.interval,2.1);
+  assert.equal(lightning.paths,24);assert.equal(lightning.second,1);assert.equal(lightning.reducedPaths,6);assert.equal(lightning.interval,1.15);
   const rainVariants=await page.evaluate(()=>{
    const entry=weatherEntries.find(e=>e.id==='rain'),c=document.createElement('canvas');c.width=700;c.height=400;const g=c.getContext('2d');
    const render=(variant,life,reduced=false,fade=1)=>{g.clearRect(0,0,700,400);drawStockScene(g,{entry,life,stockVariant:variant},fade,700,400,reduced);return c.toDataURL()};

@@ -15,7 +15,7 @@ for(const id of ['flower','mountain','bird','sun']){
    drawStockScene(g,s,1,innerWidth,innerHeight,false);
    return {flowers:s.flowers?.length,layers:s.entry.layers?.length,quadrants:s.flowers?new Set(s.flowers.map(f=>(f.x>innerWidth/2?1:0)+(f.y>innerHeight/2?2:0))).size:0};
   },{id,life});
-  if(id==='flower'){assert.ok(stats.flowers>=110&&stats.flowers<=140);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
+  if(id==='flower'){assert.ok(stats.flowers>=40&&stats.flowers<=85);assert.equal(stats.quadrants,4);}if(id==='mountain')assert.equal(stats.layers,7);
   await page.screenshot({path:'/private/tmp/motion-'+id+'-'+life+'.png'});
  }
 }
@@ -27,7 +27,7 @@ const leaves=await page.evaluate(()=>{
  const render=(leafCount,fade=1)=>{g.clearRect(0,0,700,400);drawStockScene(g,{entry:{...entry,options:{...entry.options,leafCount}},life:5,stockVariant:0},fade,700,400,false);return c.toDataURL()};
  g.clearRect(0,0,700,400);const blank=c.toDataURL();
  return {visible:render(22)!==render(0),cleanExit:render(22,0)===blank};
-});assert.ok(leaves.visible&&leaves.cleanExit);
+});assert.ok(!leaves.visible&&leaves.cleanExit,'Branch-free flowers ignore legacy leaf options');
 for(const variant of [1,2]) {
  await page.evaluate(variant=>{
   const g=document.querySelector('canvas').getContext('2d');g.clearRect(0,0,innerWidth,innerHeight);
@@ -41,7 +41,7 @@ const petalsCheck=await page.evaluate(()=>{
  drawStockScene(g,{entry,life:5,x:700,y:400},1,1400,800,false);const moving=petalDraws;
  petalDraws=0;drawStockScene(g,{entry,life:5,x:700,y:400},1,1400,800,true);
  return {moving,reduced:petalDraws};
-});assert.ok(petalsCheck.moving>0);assert.equal(petalsCheck.reduced,0);
+});assert.equal(petalsCheck.moving,0);assert.equal(petalsCheck.reduced,0);
 const motion=await page.evaluate(()=>{
  const g=document.querySelector('canvas').getContext('2d'),native=g.drawImage;
  const bird=testEntries.find(e=>e.id==='bird'),sun=testEntries.find(e=>e.id==='sun');
