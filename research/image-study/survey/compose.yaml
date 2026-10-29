@@ -1,0 +1,13 @@
+services:
+  survey:
+    build: .
+    ports:
+      - "127.0.0.1:4184:4184"
+    environment:
+      RESEARCHER_PASSWORD: ${RESEARCHER_PASSWORD:?Set a private password of at least 12 characters}
+      SURVEY_DB: /data/responses.sqlite3
+    volumes:
+      - survey-data:/data
+    restart: unless-stopped
+volumes:
+  survey-data:

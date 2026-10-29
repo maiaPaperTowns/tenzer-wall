@@ -1,0 +1,22 @@
+IMAGE INTERPRETATION SURVEY
+
+Run with Python 3, using a password of at least 12 characters:
+RESEARCHER_PASSWORD='your-private-password' python3 server.py
+
+Participant review: http://127.0.0.1:4184/
+Research dashboard: http://127.0.0.1:4184/researcher
+Username: researcher. Password: RESEARCHER_PASSWORD.
+CSV export: /researcher/export.csv (authentication required).
+
+Responses are in private/responses.sqlite3 by default, outside the served public directory.
+Set SURVEY_DB to a private persistent volume for deployment. Back up this volume according to the approved study plan. The database and passwords must never enter Git.
+
+Production requires an HTTPS reverse proxy and a persistent server host. Set BIND=0.0.0.0 only behind that proxy. GitHub Pages cannot run this Python backend or persist SQLite. Do not expose the development server directly to the internet. Apply host-level request/rate limits before collection.
+
+Current build: draft review, 105 images including 5 additional Cherry Blossom images. The final main study set is 100 images; confirm that allocation and add practice and approved consent before recruitment. Images retain original stock watermarks. Obtain appropriate licenses before research use/public distribution.
+
+Each session has a random ID and a secret update token. The server stores a hash of the token, responses and image order. No names, emails or IP addresses are stored by this application. Review hosting/proxy logs separately. In-progress answers save on Next, not on each keystroke. Reload currently starts a new session; participants should keep the tab open. Browser memory holds the session token until the tab is closed.
+
+Only authenticated researchers can view response data or export CSV. Both complete and incomplete sessions are exported with submitted timestamps so they can be distinguished. CSV responses are escaped against spreadsheet formulas.
+
+The PDFs are review artifacts. The static HTML previews do not save responses. Use this server for database-enabled review sessions.

@@ -1,0 +1,12 @@
+From this directory, set RESEARCHER_PASSWORD privately in the shell (at least 12 characters), then run:
+docker compose up --build -d
+
+Review survey: http://localhost:4184/
+Researchers: http://localhost:4184/researcher
+Username: researcher. Password: the private environment value.
+
+SQLite persists in the named survey-data volume. Stopping or rebuilding the container does not delete the volume. Do not run docker compose down -v unless deliberately deleting all responses.
+
+For public hosting, use HTTPS with a reverse proxy and a persistent Docker host. GitHub Pages cannot run the database backend. Keep passwords and response data out of Git. Configure backups and host-level request limits before recruitment.
+
+This is a review build. Consent, licensed stimuli and pilot verification are required before recruitment. 105 review images include the 5 supplementary Cherry Blossom images. Final main study image count is 100.
