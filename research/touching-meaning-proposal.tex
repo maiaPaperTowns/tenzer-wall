@@ -1,0 +1,148 @@
+% Faculty discussion proposal, four pages. Supporting protocol saved separately.
+% Overleaf compiler: pdfLaTeX. No external assets required.
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,booktabs,tabularx,array,enumitem,fancyhdr,xcolor,hyperref}
+\definecolor{inkblue}{HTML}{183F55}
+\hypersetup{colorlinks=true,urlcolor=inkblue,linkcolor=inkblue,pdftitle={Touching Meaning: Faculty Research Proposal},pdfauthor={Maia Le}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=1.4em,topsep=3pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Touching Meaning / Faculty Proposal}
+\fancyhead[R]{\small 7 October 2026}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}{8pt}{4pt}{\normalfont\large\bfseries}}
+\makeatother
+\newcommand{\nextpage}[1]{\clearpage\ifnum\value{page}=#1\relax\else\PackageError{proposal-length}{A planned page overflowed}{Shorten the preceding page.}\fi}
+\begin{document}
+{\Large\bfseries Touching Meaning: Research Proposal}\par
+\textbf{Maia Le} / For Dave Berque and Hiroko Chiba\\
+Tenzer Wall, DePauw University / Discussion: 8 October 2026
+
+\section*{Decisions to begin the meeting}
+\textbf{All study parameters below are proposals for faculty review.}
+\begin{enumerate}
+\item Confirm the single-group pre/post design and retain all three research questions.
+\item Agree recruitment scope and sample: is a feasibility target of 20 completers practical?
+\item Approve all-20-character exposure within 15 minutes, subject to pilot timing.
+\item Agree target meanings, alternate senses, and scoring responsibilities with Hiroko.
+\item Confirm the applicable IRB status and whether this protocol needs an amendment.
+\end{enumerate}
+Audio/font settings, implementation priorities, and review responsibilities can be settled after these core decisions (page 4).
+
+\section*{Project overview and motivation}
+Touching Meaning is a browser-based interactive artwork on the approximately $7680\times2160$ Tenzer Wall. Touching a falling Kanji activates an environment associated with its meaning, such as blooming flowers or birds in flight. The first prototype has been demonstrated and reviewed by the team. Hiroko selected 20 nature characters and five backups, with UD Digi Kyokasho NK-B as the initial installation font. The artwork foregrounds exploration; research examines immediate meaning identification and the experience of interpreting and using the interface.
+
+\textbf{Research focus: balancing semantic legibility with artistic ambiguity.} How can a transformation suggest a meaning while supporting open interpretation? The design tension is between recognizable cues and an experience that invites exploration beyond a literal illustration. This is a proposed contribution to investigate, not an established novelty claim.
+
+The review connects character-based animation in \emph{Living Jiagu} [1], cultural interaction in \emph{Silk Road Journey} [2], iterative design in \emph{Fontana} [3], and noticing interactivity in \emph{Looking Glass} [4]. HydraScope [5] and Smith [6] inform input and access. Extend this review to ambiguity in HCI, interactive typography, and meaning-making in art before claiming originality. Full critical summaries are in the protocol.
+
+\section*{Research questions}
+\textbf{RQ1 --- Immediate meaning identification.} How does participants' ability to identify the intended nature-related meanings of the selected Kanji change immediately after structured interaction?
+
+\textbf{RQ2 --- Interpretation.} Which visual, temporal, and auditory cues do participants use to connect Kanji with transformations, and where do interpretations diverge from intended meanings?
+
+\textbf{RQ3 --- Onboarding and use.} How do participants use the welcome message, touch targets, and feedback during a structured encounter, and what usability or access difficulties arise?
+
+\nextpage{2}
+\section*{Study design and participants}
+We propose a formative mixed-methods study using a single-group, within-participant pre/post design. Paired meaning tests address RQ1; observation, event logs, and interviews address RQ2 and RQ3. The study measures change after the complete experience. 
+
+\textbf{Proposed sample: 20 adult completers, pending faculty agreement.} This is a feasibility target, not a sample size derived from statistical power. Propose up to 24 enrollments and two or three separate pilots; report actual completion. Recruit adults aged 18 or older through approved DePauw channels; participation must have no effect on grades or standing.
+
+Record Japanese experience, knowledge of other languages using Chinese characters, prior installation exposure, and interactive-art familiarity. Prefer participants without previous installation exposure. Report baseline ceiling effects and retain interpretation/usability evidence. Confirm compensation and wall bookings before recruitment.
+
+\section*{Proposed session: approximately 40--45 minutes}
+Book a 60-minute wall slot to allow reset and transition between sessions.
+
+\noindent\begin{tabularx}{\linewidth}{p{0.26\linewidth}p{0.10\linewidth}Y}
+\toprule Stage & Minutes & Procedure \\
+\midrule
+Consent/background & 4--5 & Explain participation and record relevant experience. \\
+Pre-test & 5--6 & Free-response meanings for all 20 glyphs; no feedback. \\
+Wall interaction & 15 & Three minutes of exploration, ten of structured coverage, two of free revisiting. \\
+Post-test & 5--6 & Same glyphs, independently shuffled, without animation. \\
+Interview & 7--8 & Discuss cues, ambiguity, onboarding, and difficulties. \\
+Debrief & 2 & Answer questions and provide meanings if requested. \\
+\bottomrule
+\end{tabularx}
+
+
+\section*{Exposure and testing}
+Use the same selected set and glyph representation on the wall and both tests. Present glyphs alone without English choices, pronunciation, or images. Accept ``I don't know'' and prohibit translation aids. Conduct the post-test before discussing meanings or replaying scenes.
+
+For structured exposure, propose four blocks of five characters, rotating block order and shuffling within blocks. A neutral glyph card can identify an unvisited character without supplying a translation. Seek one successful activation and completed principal transformation for each character. Log activation, scene completion, repetition, and interruption; completion does not establish attention.
+
+Keep the welcome message visible. Propose help after 45 seconds without interaction; respond earlier if requested and log cues. RQ3 concerns this instructed encounter. Freeze audio/font settings; log muting for comfort.
+
+Pilots must establish that the timing permits unhurried coverage. Revise before main collection if needed; record incomplete exposure rather than silently extending sessions. Freeze the build, script, exposure schedule, instruments, and rubric after the pilot.
+
+\nextpage{3}
+\section*{Measures and scoring}
+\textbf{RQ1 primary outcome:} change in correctly identified target meanings out of 20. For participant $i$, report both scores and their difference:
+\[
+\Delta_i=S_{i,\mathrm{post}}-S_{i,\mathrm{pre}},\qquad S_{it}\in\{0,\ldots,20\}.
+\]
+Hiroko will review accepted synonyms and ambiguous cases before collection. Distinguish target-correct, related but insufficiently specific, another valid sense, unrelated, and ``I don't know.'' For example, ``day'' for the sun target is another valid sense; ``water'' for waterfall may be insufficiently specific. Resolve thunder/lightning cases in advance. Two scorers independently assess de-identified responses with time-point labels hidden where feasible, then resolve disagreements using the rubric.
+
+``I don't know'' is a valid zero; an interrupted or omitted item is missing. Complete-set summaries require 20 valid pairs. Report incomplete cases separately with paired-item denominators. Secondary measures include response transitions, initially unfamiliar meanings identified after qualifying exposure, first touch/activation times, assistance, failed attempts, control use, and interview explanations. Keep alternate-sense baseline answers visible. Build a descriptive response table for water, river, sea, and waterfall, retaining verbatim answers and exposure records to inspect semantic confusions.
+
+\section*{Analysis}
+Plot participant pre/post scores and report mean and median change, range, and numbers improving, unchanged, or decreasing. An exploratory 95\% bootstrap interval can resample whole participants while preserving pairs. Show individual patterns and ceiling effects alongside uncertainty. Character responses from the same person are not independent participants. Any significance test or additional exclusion rule must be agreed before main outcome analysis.
+
+Use qualitative content analysis of interviews and observation, starting with cues such as object, motion, sound, form continuity, ambiguity, and perceived causality, while allowing new categories. A faculty collaborator reviews a subset and discusses interpretations. Link score transitions, exposure, and explanations in an evidence table. Ask which cues supported each interpretation and where a scene invited multiple meanings. Include clear, ambiguous, and contradictory cases. Cue mentions are reported interpretations, not causal effects of motion or sound. Report missingness, deviations, and scorer agreement; retain participants who do not improve.
+
+\section*{IRB and data management}
+Confirm the applicable institutional status and covered activities before participant research; update the protocol if required. Consent covers tasks, duration, withdrawal, compensation, and recording choices. Prefer notes and approved interview audio; identifiable video requires a justified purpose and appropriate approval. Avoid bystander recording.
+
+Use participant IDs and institution-approved storage. Keep consent/contact information and the ID key separate from responses; agree retention, deletion, and withdrawal rules. Keep identifiable data out of Overleaf and public repositories. Offer breaks, stopping, and muting; record exposure differences without pressuring completion.
+
+\section*{Limits of the evidence}
+A pre-test directs attention toward meanings, and repeated testing may influence scores. Without a comparison group, change cannot isolate the effects of touch, animation, sound, or attention. Immediate results do not establish retention or language proficiency. Recruitment and instructions prevent claims about spontaneous passer-by discovery. Prior knowledge, overlapping meanings, incomplete exposure, and a small convenience sample constrain generalization and subgroup comparisons.
+
+\nextpage{4}
+\section*{Contribution and CHI preparation}
+\textbf{Proposed contribution:} an empirical account of the tension between semantic legibility and artistic ambiguity in a touch-driven character artwork. The value for HCI is evidence about when recognizable objects, motion, sound, and form continuity support interpretation, and when ambiguity enriches or obstructs the encounter.
+
+\textbf{Evidence still required:} run the formative study and report actual paired identification scores, water/river/sea/waterfall response patterns, and cue-based explanations. Describe promising or difficult effects with denominators and prior-knowledge context; avoid ranking effects as causally superior. Document revisions resulting from the evidence.
+
+Each design consideration must connect an observed pattern, contrasting cases or quotes, a design response, and its limits. For example, whether specific flow cues help distinguish water scenes is a question to test. Until results exist, these remain candidate considerations. If collection is delayed, narrow the submission's claims to the documented design contribution.
+
+The planned CHI 2027 Posters submission comprises an anonymous ACM single-column paper of up to four pages excluding references, an A0 poster, and discussion points. The official call lists \textbf{21 January 2027 AoE} as the deadline.\footnote{Call checked 2 October 2026: \url{https://chi2027.acm.org/authors/posters/}. Recheck before submission.} Draft background/design now; write results after collection. Prepare interaction and results figures; check rights, anonymity, accessibility, disclosures, and coauthor approval.
+
+\section*{Proposed timeline}
+
+\noindent\begin{tabularx}{\linewidth}{p{0.23\linewidth}Y}
+\toprule Target & Milestone \\
+\midrule
+8 October & Agree study design, recruitment, exposure, rubric, and institutional coverage. \\
+9--23 October & Finish priority wall fixes, all-20 mappings, instruments, and logs. \\
+26 Oct.--6 Nov. & Pilot, revise, and freeze; assess scope/readiness on 6 November. \\
+9--24 November & Main sessions and progressive data checks. \\
+30 Nov.--4 Dec. & Scoring, analysis, evidence tables, and figures. \\
+5--11 December & Protect examination time; light organization. \\
+12--18 December & Complete paper and poster drafts for faculty review. \\
+19 Dec.--8 Jan. & Revise around faculty availability; close literature gaps. \\
+9--15 January & Final coauthor review and submission checks. \\
+19 January & Submit early and inspect uploaded files. \\
+21 January & Official deadline; reserve time for essential corrections. \\
+\bottomrule
+\end{tabularx}
+
+
+\section*{Remaining faculty decisions and responsibilities}
+\textbf{Settings and readiness:} agree audio policy, initial font, and required pre-pilot features: reachable sound/About controls, welcome copy, contrast, context-menu suppression, configurable mappings, and imagery rights. Mike advises sound and wall operations.
+
+\textbf{People and resources:} Maia proposes to lead implementation, sessions, analysis, and writing; Hiroko reviews meanings/rubric and imagery; Dave advises HCI framing and quantitative analysis. Confirm scoring, sponsorship, compensation, wall access, authorship, and review dates.
+
+\textbf{Supporting document:} \emph{Touching Meaning: Detailed Research Protocol and Initial Literature Review} retains the complete literature review, scoring rules, exposure scheduling, instruments, 20-character table, and data dictionary for implementation and IRB preparation.
+
+{\footnotesize\textbf{Cited literature (full references in protocol):} [1] Cheng et al., 2020, \emph{Living Jiagu}; [2] Li et al., 2024, \emph{Silk Road Journey}; [3] van Renswouw et al., 2022, \emph{Fontana}; [4] M\"uller et al., 2012, \emph{Looking Glass}; [5] Wu, 2012, \emph{HydraScope}; [6] Smith, 2013, \emph{Designing for Tomorrow's Digital Outcasts}.}
+\clearpage
+\ifnum\value{page}=5\relax\else\PackageError{proposal-length}{Faculty proposal is not four pages}{Shorten overflowing content.}\fi
+\end{document}

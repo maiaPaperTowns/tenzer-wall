@@ -1,0 +1,420 @@
+% Standalone detailed study protocol. Overleaf compiler: pdfLaTeX.
+% All figures and references are embedded. No external fonts/assets required.
+% Internal faculty proposal; separate from the four-page CHI manuscript.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,CJKutf8,amsmath}
+\usepackage{booktabs,longtable,tabularx,array,enumitem,xcolor,fancyhdr}
+\usepackage{hyperref}
+\definecolor{inkblue}{HTML}{183F55}
+\hypersetup{colorlinks=true,linkcolor=inkblue,citecolor=inkblue,urlcolor=inkblue,
+pdftitle={Touching Meaning: Detailed Research Protocol},pdfauthor={Maia Le}}
+\newcommand{\kanji}[1]{\begin{CJK}{UTF8}{min}#1\end{CJK}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=1.5em,topsep=4pt}
+\renewcommand{\arraystretch}{1.15}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Touching Meaning}
+\fancyhead[R]{\small Protocol / 7 October 2026}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Touching Meaning}\\[6pt]
+{\Large Exploring Semantic Interaction with Kanji\\on a Large-Scale Interactive Display}\\[12pt]
+{\large Detailed Research Protocol and Initial Literature Review}\\[8pt]
+\textbf{Prepared by Maia Le}\\
+Student Research Associate, DePauw University\\[5pt]
+\textbf{For Professor Dave Berque and Professor Hiroko Chiba}\\
+Tenzer Wall, Roy O. West Library\\[5pt]
+7 October 2026 / Supporting protocol for discussion on 8 October
+\end{center}
+
+\section*{Executive Summary}
+Touching Meaning is an interactive artwork that connects Kanji characters with visual environments through direct touch. Visitors activate falling characters and encounter flowers, birds, mountains, and other natural imagery across the Tenzer Wall. Its purpose remains artistic and experiential. The research will examine changes in participants' ability to identify the characters' meanings, the cues they use to interpret transformations, and their experience of the touch interface.
+
+Following the faculty email of 27 September, this proposal centers a structured pre/post assessment. The recommended design is a formative mixed-methods study proposing 20 adult completers, subject to faculty agreement. Participants will complete a free-response test of the 20 faculty-selected Kanji, interact with the wall for approximately 15 minutes with documented coverage of the set, complete an immediate post-test, and discuss selected experiences in an interview. The primary outcome is within-participant change in the number of target meanings identified correctly. Logs, observation, and interviews will help explain the quantitative pattern.
+
+Deliverables are a refined installation, a documented design process, preliminary empirical findings, and a paper and visual poster submitted to CHI 2027 Posters. This full proposal supports faculty discussion and will later be condensed into the conference manuscript. It does not report participant results or claim institutional approval. Study details below are recommendations for PI review.
+
+\textbf{Decisions requested:} RQ priorities, sample and session duration, exposure procedure, scoring rubric, audio/font settings, and development and writing milestones.
+\tableofcontents
+\newpage
+
+\section{Context, Current Status, and Scope}
+A first browser-based prototype has been demonstrated on the Tenzer Wall. Team feedback supported the full-wall visual effects, particularly flower, bird, mountain, and thunder. Dave emphasized building a strong artwork and studying the resulting experience. Hiroko supported natural imagery with a mixture of artistic influences, without requiring every scene to contain explicitly East Asian motifs.
+
+The 27 September faculty email requests a study of how much, if any, participants learn about Kanji meanings after structured interaction. We operationalize this as \emph{immediate identification of selected meanings}. This is narrower than Japanese-language proficiency, pronunciation, character production, or long-term retention.
+
+\begin{longtable}{p{0.24\linewidth}p{0.68\linewidth}}
+\toprule Status & Current understanding \\
+\midrule\endhead
+Established direction & Direct touch, full-wall semantic effects, artistic exploration, and a browser application on an approximately $7680\times2160$ infrared touch display. Single-tap input is sufficient for the current scope. \\
+Faculty-selected content & Hiroko supplied 20 core nature Kanji and five backups. The initial font is UD Digi Kyokasho NK-B. She hopes to create original calligraphy later; timing is unconfirmed. \\
+Requested implementation & Reachable sound/About controls; floating welcome instructions; varied horizontal spawning; improved contrast over dark scenes; configuration-based mappings; context-menu suppression; and documented image rights. \\
+Audio & Sound is present in the prototype described by the email. Mike should advise on wall audio. Short musical passages are acceptable possibilities; the study's audio policy remains open. \\
+Study decisions & Pre/post assessment is requested. RQ ordering, enrollment, instruments, exposure, scoring, and analysis in this proposal require PI agreement. \\
+Publication & Maia's planned deliverable is a CHI Posters submission. Authorship, author order, correspondence, and final submission commitment will be agreed explicitly. \\
+\bottomrule
+\end{longtable}
+
+This status account uses the supplied meeting notes, faculty email, and Hiroko's list; it is not an audit of the latest software. Before research sessions, verify each required feature on the installed build. The initial scope excludes a controlled comparison with classroom teaching, a delayed retention experiment, and a public passer-by field study.
+
+\section{Motivation and Research Opportunity}
+The central sequence is written symbol, touch, visual transformation, and environmental experience. A visitor may notice that their touch caused a response, identify an object in that response, infer a meaning, and later associate that meaning with the original glyph. These are distinct achievements.
+
+We use \emph{semantic transformation} as a working description of a response derived from an intended meaning. For example, \kanji{花} activates flowers, while \kanji{川} may develop into a flowing river. The design goal is for the character to participate visibly in the transition. Each effect's realization of this goal must be documented rather than assumed.
+
+The research opportunity is to examine what participants identify afterward, what cues they use, and where interpretations diverge from the intended sense. A credible contribution can combine an articulated interaction design with a modest, carefully reported study. It does not depend on a novel recognition algorithm or on proving that the installation outperforms other learning approaches.
+
+\section{Initial Literature Review}
+\subsection{Character construction and animated environments}
+\emph{Living Jiagu} connects participant-drawn Oracle Bone Script characters with animated wall scenes~\cite{cheng2020}. Participants draw from image prompts on tablets; the system evaluates sketches and brings them into a shared scene. Its technical account includes neural similarity matching and stroke correspondence. The authors frame this as constructive etymology for Chinese learning.
+
+The paper reports deployment and positive reception from more than 1,000 attendees, but does not present a measured learning evaluation. These figures describe reach, not demonstrated learning gains. Touching Meaning instead starts with existing Kanji activated directly on the wall. Its transformations are artistic interpretations of selected meanings; they need not reconstruct etymology. Modern Kanji and Oracle Bone Script should remain linguistically distinct in the framing.
+
+\subsection{Cultural content and artistic experience}
+\emph{Silk Road Journey} combines culturally themed narratives, bodily interaction, and pose-conditioned image generation~\cite{li2024}. Its description connects visitor actions, physical layout, content, and implementation. This provides a useful model for explaining an artwork as a complete experience.
+
+Its exhibition impressions are not accompanied by sufficient participant-method detail to establish broad cultural-awareness effects. We can adopt the clarity of its system description without adopting unsupported benefit claims. AI-assisted asset preparation, where used in our project, will be identified as a production process; live generative inference is not required by our interaction concept.
+
+\subsection{Iterative design, onboarding, and inclusion}
+\emph{Fontana} documents design exploration and preliminary tests of an interactive water installation~\cite{vanrenswouw2022}. Initial testing with 12 participants revealed uncertainty about how to begin. An improved prototype was tested with 19 adults using observation and interviews. Its iterative account connects design decisions with observed difficulties.
+
+This is a useful methodological precedent for documenting the artifact, its evaluation, and subsequent revisions. Multiple aspects changed between Fontana's tests, so differences do not isolate the effect of a single feature. The paper also identifies the need for longer observation to assess durable social effects. In our project, internal PI feedback likewise belongs to the design history and is distinct from participant evidence.
+
+\subsection{Noticing public-display interactivity}
+\emph{Looking Glass} separates attending to a public display from recognizing that it is interactive~\cite{mueller2012}. It includes a 16-participant laboratory study and a shop-window deployment, with 502 interaction sessions analyzed from 11 coded days within a three-week deployment. Responsive user representations provided cues to movement-based interaction; the authors describe returning after walking past a display and learning from others' visible interaction.
+
+The study supports distinguishing stages of an encounter, but its numerical effects cannot be transferred to direct-touch artwork. Our welcome message explicitly explains what to do. The proposed study will examine onboarding with those instructions, rather than unprompted discovery by uninformed passers-by. A recruited encounter, especially after a meaning pre-test, must be described as such.
+
+\subsection{Wall interaction and accessibility}
+Wu's \emph{HydraScope} technical report examines remote control and application reuse for wall displays~\cite{wu2012}. Its selection, dragging, and search tasks provide context for treating input demands separately from display size. Detailed results qualify the broad summary: touchpad control was fastest overall, whereas four-way control produced fewer incorrect placements. Neither establishes an optimum for our direct-touch installation.
+
+Smith discusses how physical input can impose demands on movement, perception, and comfort~\cite{smith2013}. This chapter provides design guidance and synthesis, not direct evidence about Kanji interpretation. Together with Fontana, it motivates reachable targets, forgiving activation, legible feedback, and sensory choice. Single-tap interaction alone does not establish universal accessibility.
+
+\subsection{Synthesis and remaining literature}
+These six sources locate the project among character-based environments, interactive cultural art, public-display onboarding, and large-display input. They motivate a focused investigation of existing Kanji activated by touch and interpreted through environmental imagery. They do not establish comprehensive novelty across HCI.
+
+Before submission, extend the review selectively to interactive typography/calligraphy, ambiguity and interpretation in art, research-through-design methodology, and immediate meaning associations/testing effects. Read original sources before citing works encountered only in others' bibliographies. This proposal uses iterative design documentation and a formative study; building a prototype alone will not be presented as a complete research-through-design contribution.
+
+\subsection{Sharpening the contribution: legibility and ambiguity}
+The proposed research focus is balancing semantic legibility with artistic ambiguity: making intended meanings interpretable while allowing an open artistic encounter. This is a framing to investigate, not a demonstrated novelty claim. Extend the literature review to ambiguity in HCI, interactive typography, and interpretation in art before establishing originality.
+
+No empirical findings are available yet. Resolve this evidence gap through the proposed formative study: paired participant identification scores; descriptive response patterns for water, river, sea, and waterfall; explanations of visual, temporal, auditory, and form-related cues; and observed onboarding/access problems. Preserve verbatim responses, prior knowledge, exposure completeness, and contradictory cases. Different scenes have different baseline familiarity and cue bundles, so descriptive performance cannot establish a causally superior effect. Interview accounts identify perceived cues, not isolated causal effects of sound or motion.
+
+For each proposed design consideration, construct an evidence chain: observed pattern, supporting and contrasting cases, interpretation, resulting design response, and scope limits. Ask whether ambiguity permits coherent alternative interpretations, impedes the intended association, or does both; do not assume ambiguity is either universally beneficial or undesirable. Document revisions and, where feasible, check them in later approved sessions, reporting study versions separately. The eventual contribution should explain what other designers can learn from the observed tension, rather than relying on the number of effects or a different input technique from Living Jiagu.
+
+\section{Objectives and Research Questions}
+\textbf{Design objective:} create a coherent artistic experience using the selected characters, readable touch targets, and full-wall transformations.
+
+\textbf{Research objective:} estimate immediate change in meaning identification after structured interaction and explain successes, ambiguities, and usability problems.
+
+\begin{description}
+\item[RQ1 --- Primary: meaning identification.] How does participants' ability to identify the intended nature-related meanings of the selected Kanji change immediately after structured interaction with the installation?
+\item[RQ2 --- Explanatory: interpretation.] Which visual, temporal, and auditory cues do participants use to connect Kanji with their transformations, and where do their interpretations diverge from the intended meanings?
+\item[RQ3 --- Formative: onboarding and use.] How do participants use the welcome message, touch targets, and feedback during a structured encounter, and what usability or access difficulties arise?
+\end{description}
+
+This ordering is recommended in response to the PIs' email; it is not already approved. The study need not produce positive change to be informative. There is no confirmatory hypothesis that one transformation category is better than another.
+
+\begin{tabularx}{\linewidth}{p{0.08\linewidth}YY}
+\toprule RQ & Evidence & Output \\
+\midrule
+1 & Paired tests, language background, exposure & Participant-level changes, response transitions, uncertainty \\
+2 & Interviews, scene examples, observation & Explanations, ambiguities, and counterexamples \\
+3 & First actions, help, activation failures, controls & Usability findings and evidence-based revisions \\
+\bottomrule
+\end{tabularx}
+
+\section{Artwork and Implementation Plan}
+\subsection{Interaction and faculty-requested refinements}
+\begin{center}\fbox{\parbox{0.91\linewidth}{\centering
+Kanji $\longrightarrow$ direct touch $\longrightarrow$ semantic visual response\\
+$\longrightarrow$ full-wall environment $\longrightarrow$ continued exploration}}
+\end{center}
+The upper wall can support effects even where visitors cannot reach. Characters should enter reachable areas and remain available long enough to avoid a rapid catching task. Prompt local acknowledgment of a touch can coexist with a slow environmental transition.
+
+\begin{enumerate}
+\item Confirm sound operation and volume with Mike, including environmental sounds and possible short musical passages.
+\item Suppress the browser context menu and verify long-touch behavior on the Windows wall machine.
+\item Move the sound toggle near the bottom; put About immediately to its right.
+\item Add welcome instructions and verify their readability across scenes.
+\item Improve Kanji contrast over dark images, especially the reported thunder scene.
+\item Implement all 20 selected characters, initially using UD Digi Kyokasho NK-B. Confirm font deployment rights; do not assume permission to redistribute the font file.
+\item Store character/effect mappings in an editable table and validate incomplete entries.
+\item Randomize horizontal starting coordinates over the usable width and inspect the actual distribution.
+\item Review imagery for a mixture of influences and maintain source/license records.
+\end{enumerate}
+
+Appendix~\ref{app:kanji} lists the exact selected set and proposed treatments. These concepts are not a claim that all scenes are implemented. Glyphs in this proposal use a portable document font, not the installation font or original calligraphy.
+
+\subsection{Architecture, provenance, and study readiness}
+Separate touch input, semantic mappings, and animation. Configuration entries should include stable character ID, glyph, target meaning, visual/sound references, effect type, duration, and relevant parameters. Provenance records should include creator, source URL, rights statement, acquisition date, original file, and any AI-assisted or manual transformation. Reusability is an engineering benefit rather than a novelty claim.
+
+Add researcher-controlled session start/reset and event export. Keep public operation separate from research logging. The participant-facing artwork and controls remain the same in study mode; only scheduling is adjusted to ensure coverage. Before piloting, test legibility, reach, acknowledgment, transitions, sound, and exports on the wall. Freeze the study build, configuration, assets, font, and script after piloting. Record subsequent changes and assess whether they require protocol review or separate analysis.
+
+\section{Study Design and Participants}
+\subsection{Design and inference}
+The recommended design is a single-group, within-participant pre/post study with explanatory qualitative evidence. It directly addresses the requested quantifiable outcome and is feasible for a formative poster project. It measures change after the complete structured experience; without a comparison group it cannot isolate the effect of touch, animation, time, attention, audio, or testing.
+
+Use \emph{immediate meaning identification after structured interaction} in reporting. Because the pre-test directs attention toward meanings, an unqualified claim of incidental learning would be inappropriate. No delayed test is included initially. A delayed assessment or comparison condition can be added only through an agreed change to the design and schedule.
+
+\subsection{Sample and recruitment}
+Propose a feasibility target of \textbf{20 completed main-study participants, subject to faculty agreement}. Propose up to 24 main-study enrollments to accommodate incomplete sessions, plus up to three separate pilot participants, subject to faculty and institutional agreement. These figures are feasibility targets, not a power calculation for a definitive efficacy claim. If recruitment is lower, report the actual sample and precision rather than treating a threshold as proof of validity.
+
+Recruit adults aged 18 or older from the DePauw community who have preferably not used this installation. Record Japanese experience, experience with Chinese or other character-using languages, prior installation exposure, and familiarity with interactive art. Participants with extensive knowledge can still provide interpretation/usability evidence; show their baseline scores and ceiling effects rather than hiding them. Do not infer Chinese-character literacy solely from Japanese-course history.
+
+Use voluntary approved channels. Where faculty teach potential participants, ensure that participation has no bearing on grades or academic standing. Confirm compensation before recruitment. Keep scheduling/payment data separate from research responses.
+
+\subsection{Materials and conditions}
+Use the same 20 characters and font representation at both tests and on the wall. Present each test glyph alone, without images, pronunciation, English choices, or feedback. Shuffle pre/post orders independently and save both orders. Prefer free responses to multiple choice to avoid supplying semantic options.
+
+Fix an audio policy before collection. One consistent available setting is preferable; participants can still mute for comfort, with actual audio states logged. These deviations are descriptive, not a controlled comparison of sound. Any accessible response arrangements should be documented; handwriting or spelling skill should not determine whether a meaning is understood. Confirm that the team can reliably interpret responses in any permitted language.
+
+\section{Session Procedure}
+Allow \textbf{approximately 40--45 minutes per session}, booked in 60-minute slots. Pilot the estimate. The 15-minute target concerns wall interaction, not the entire appointment.
+
+\begin{longtable}{p{0.26\linewidth}p{0.10\linewidth}p{0.55\linewidth}}
+\toprule Stage & Minutes & Procedure \\
+\midrule\endhead
+Consent/background & 4--5 & Explain tasks and recording; document relevant experience. \\
+Pre-test & 5--6 & All 20 glyphs; meaning or ``I don't know''; optional confidence, 1--5. No correctness feedback. \\
+Initial exploration & 3 & Normal artwork and welcome message; observe first attempts, success, instructions and assistance. \\
+Structured coverage & 10 & Four blocks of five characters, with one activation and completed scene sought for each. \\
+Free revisit & 2 & Participants may return to scenes; log repetition and incomplete coverage. \\
+Immediate post-test & 5--6 & Same characters, newly shuffled; same format, without animation. \\
+Interview & 7--8 & Discuss interpretation and experience after the test. \\
+Debrief & 2 & Answer questions and provide meaning information if requested. \\
+\bottomrule
+\end{longtable}
+
+\subsection{Exposure scheduling}
+Rotate the order of the four blocks using a prespecified schedule across participants, and shuffle within blocks. Allow approximately two and a half minutes per block. The pilot must verify that all scenes can be experienced without rushing. If durations do not fit, revise the procedure before main collection rather than silently shortening effects.
+
+A neutral card may identify an unvisited glyph, and the researcher may ask the participant to find and touch it. Cards contain no translations. Do not name the scene's object, evaluate guesses, or provide meaning feedback. Log translations accidentally supplied by researchers or bystanders as deviations.
+
+For each character, distinguish displayed, touch attempted, activation registered, scene completed, and attention observed/uncertain. A completed scene requires the defined principal transformation to play without early replacement. Record looking away and interruptions where observable. This operational measure does not establish cognitive attention; activation-only exposure will be a secondary summary.
+
+If coverage is incomplete after 15 minutes, record it. Do not silently extend selected sessions or discard their responses. The primary paired result describes the assigned experience; exposure-qualified summaries will show how incomplete encounters affect interpretation.
+
+\subsection{Onboarding and assistance}
+Keep the PIs' welcome message visible. Invite exploration without adding translations. If no interaction occurs after a proposed 45 seconds, direct attention to the message; if needed, explain that touching a falling character activates a scene. Respond earlier if help is requested. Record prompt times and levels. The interval is a pilot parameter, not a recognition threshold borrowed from Looking Glass.
+
+Because participants are recruited, consented, pre-tested, and instructed, this procedure measures onboarding under those conditions. It cannot estimate spontaneous discovery or attraction among passers-by.
+
+\subsection{Pilot and freeze}
+Conduct two or three approved pilot sessions to check timing, fatigue, all-character coverage, readability, sound, export integrity, and question clarity. Keep pilot data separate by default. Revise and document the protocol and obtain any necessary institutional amendment before main collection. Freeze the rubric before examining main-study score changes.
+
+\section{Measures and Scoring}
+\subsection{Primary outcome}
+Let $x_{ijt}=1$ if participant $i$ identifies the accepted target sense of character $j$ at time $t$, and 0 otherwise for valid responses. Define
+\[
+S_{it}=\sum_{j=1}^{20}x_{ijt},\qquad
+\Delta_i=S_{i,\mathrm{post}}-S_{i,\mathrm{pre}}.
+\]
+The primary outcome is the change in correctly identified target meanings out of 20, reported alongside both component scores. ``I don't know'' is a valid zero. An omitted item due to interruption is missing, not automatically incorrect. Complete-set summaries require all 20 valid pairs; incomplete cases remain visible in a separate paired-item analysis with explicit denominators.
+
+\subsection{Linguistic rubric}
+Hiroko will review accepted meanings, synonyms, and ambiguous cases before collection. The primary score requires the intended nature sense or an accepted equivalent. Secondary codes distinguish a related but insufficiently specific answer, another valid sense, an unrelated answer, and ``I don't know.''
+
+For example, ``water'' for \kanji{滝} may be related but insufficiently specific for waterfall. ``Day'' for \kanji{日} can be a valid meaning while differing from the selected sun sense. It must not be described as proof that the participant does not know the character. Agree in advance how to handle ``lightning'' for \kanji{雷} and ``woods'' for \kanji{森}; these are discussion cases, not final grading decisions.
+
+Two scorers will independently assess de-identified responses, mixed in order and without pre/post labels where feasible. Resolve disagreements using the rubric, retain initial scores, and report initial agreement and resolution procedures. Accept spelling variants when meaning is clear. Any rubric clarification must apply consistently to both time points, not selectively to apparent improvements.
+
+\subsection{Secondary outcomes}
+\begin{itemize}
+\item Response transitions: newly target-correct, persistently correct, correct-to-incorrect, and persistently not target-correct.
+\item For each participant, the proportion of baseline-not-target-correct meanings with qualifying exposure that become correct. A zero denominator is not applicable, not zero. Report valid-other-sense baseline answers separately and summarize again excluding them.
+\item Confidence change, if retained after the pilot, and high-confidence mismatches.
+\item Time to first attempted touch and first successful activation, assistance, failed attempts, repeated activations, control use, and interrupted scenes.
+\item Interview explanations of objects, motion, form continuity, sound, environmental context, ambiguity, and perceived causality.
+\item Open descriptions of the experience; do not prompt participants to report calmness or interpret preference as a health benefit.
+\end{itemize}
+
+\section{Analysis Plan}
+\subsection{Quantitative analysis}
+Create a participant-level pre/post plot and a table of baseline, post-test, and change scores. Report mean and median change, range, and counts of participants who improve, remain unchanged, or decrease. Estimate an exploratory 95\% bootstrap interval for mean change by resampling whole participants, preserving paired observations. With a small sample the interval may be unstable; show the individual data distribution alongside it.
+
+The initial plan does not require a significance test. If the PIs prefer one, specify it before main outcome analysis and label it exploratory. Do not treat multiple character responses from one person as independent participants. Per-character summaries must include denominators; prior language experience and transformation-category patterns remain descriptive, not powered subgroup comparisons or causal rankings.
+
+Report exposure completeness and ceiling effects. The principal outcome remains fixed-set score change; exposure-qualified outcomes answer a narrower question and must not replace the primary result merely because they look more favorable.
+
+\subsection{Qualitative analysis and integration}
+Use pragmatic qualitative content analysis. Maia will read interviews and observation notes and develop a provisional codebook grounded in participant explanations. Sensitizing topics include object, motion, environmental cue, sound, form continuity, ambiguity, and causality, with room for new categories and contradictory cases. A faculty collaborator will review a subset and discuss interpretation; document this process rather than claiming a reliability procedure that was not performed.
+
+Create a joint evidence table linking score transitions, exposure, observations, and explanations for selected characters. Support each finding with specific evidence and preserve negative cases. Retrospective explanations may differ from what a participant noticed during interaction. Do not promise thematic saturation in advance. Translate the analysis into a small number of supported design considerations rather than a list of universal principles.
+
+\subsection{Missing data and reproducibility}
+Report enrollment, completion, exclusions, and reasons. Do not exclude a participant for failing to improve. Treat missing items, documented translation cues, and technical failures according to prespecified rules, preserving unaffected data where appropriate. Show sensitivity summaries for incomplete exposure, assistance and audio deviations. Retain raw exports, cleaned data, rubric versions, and analysis code in approved storage so numbers in the paper can be checked.
+
+\section{Ethics and Data Management}
+The PIs will confirm the applicable IRB status and approved activities before participant research. This proposal does not assert a specific determination. Consent should explain tasks, duration, voluntary withdrawal, compensation, and recording choices. Prefer notes and interview audio over identifiable video unless video is necessary and approved. Public use of a person's image requires appropriate permission. Avoid recording bystanders; enable research logs only for consented sessions.
+
+Use participant IDs and store consent, contacts, payment details, and the ID key separately from response data. Use institution-approved storage restricted to the research team. Confirm retention/deletion periods and the withdrawal cutoff in the final protocol. Do not upload identifiable data to the source repository, Overleaf, public demo, or unapproved transcription/AI services.
+
+Provide breaks, a stop option, and freedom to mute audio or avoid a scene. Record resulting exposure differences rather than pressuring completion. Inspect reach, fatigue, target motion, brightness changes, and sound comfort. These measures are design responsibilities; a convenience sample does not establish accessibility for all visitors.
+
+\section{Limitations and Contingencies}
+\begin{longtable}{p{0.25\linewidth}p{0.67\linewidth}}
+\toprule Issue & Response and remaining limit \\
+\midrule\endhead
+Pre-test sensitization & No answer choices or feedback; acknowledge attention directed toward meanings. \\
+No control group & Describe observed change after the complete experience; avoid causal superiority claims. \\
+Immediate assessment & No claim about durable retention or language proficiency. \\
+Prior knowledge & Record language experience, alternate senses, and ceiling effects. \\
+Exposure and attention & Schedule coverage and log interruptions; attention remains partly unobservable. \\
+Artwork/test trade-off & Preserve visual effects and disclose structured scheduling. \\
+Semantic overlap & Use reviewed scoring and inspect confusions among tree/forest and water/river/sea/waterfall. \\
+Small convenience sample & Report individual patterns and uncertainty; avoid universal or demographic conclusions. \\
+Late readiness & Review scope on 6 November. Narrow the study or prepare a design/prototype submission based on available evidence; do not replace missing data with unsupported claims. \\
+\bottomrule
+\end{longtable}
+
+\section{Deliverables and CHI Strategy}
+Outputs will include (1) the 20-character installation, (2) an iteration and asset-provenance record, (3) study instruments, rubric and reproducible analysis, and (4) a CHI poster paper and visual poster submission. Expected contributions are the interaction design and preliminary insight into meaning identification, interpretation, and use. The eventual wording must follow the actual findings.
+
+The current CHI call lists \textbf{21 January 2027 AoE} as the deadline. Submission includes an anonymous single-column paper of up to four pages excluding references, an A0 poster, and discussion points through PCS. Four author review-responsibility slots are required; clarify allocation for the final team. This internal proposal is not subject to the paper's four-page limit.\footnote{Official call, checked 2 October 2026: \url{https://chi2027.acm.org/authors/posters/}.}
+
+Use the official ACM review template for the eventual submission.\footnote{\url{https://chi2027.acm.org/chi-publication-formats/}.} A tentative allocation is about one page each for motivation/related work, system/design, study/methods, and findings/discussion. Adjust around the evidence rather than changing template typography. Draft background and design now; replace proposed methods with actual methods after collection.
+
+Prepare original figures showing the wall/reachable region, a transformation sequence, and participant-level results. The About panel contains identifying credits: mask those in review screenshots and linked review materials as required while accurately describing the studied interface. Verify rights, anonymity, accessible figures, required AI-use disclosure, and coauthor approval before upload.
+
+If accepted, notification is scheduled for 18 February; rights completion, 25 February; TAPS source submission, 4 March; and publication-ready files/video, 18 March. At least one author must register and present. Recheck requirements and budget separately for registration, printing, and travel or remote presentation.
+
+\section{Timeline, Roles, and Resources}
+Dates below are proposed internal targets, dependent on faculty availability, readiness and research authorization.
+\begin{longtable}{p{0.20\linewidth}p{0.72\linewidth}}
+\toprule Target & Milestone \\
+\midrule\endhead
+2--8 October & Discuss proposal at the scheduled 8 October, 9:00--9:45 meeting; agree RQs, sample, exposure, scoring, audio and font. \\
+9--23 October & Complete priority fixes, character mappings, instruments and logging. Confirm wall access and authorization. \\
+26 October--6 November & Pilot, revise, and freeze the study. Assess feasibility on 6 November. \\
+9--24 November & Main sessions, progressive data checks/transcription; finish before Thanksgiving if feasible. \\
+30 November--4 December & Final scoring, analysis, evidence tables and figures. \\
+5--11 December & Protect examination time; light checks and organization. \\
+12--18 December & Complete paper and visual-poster drafts for review. \\
+19 December--8 January & Revision around agreed holiday availability; close literature gaps. \\
+9--15 January & Final coauthor review, metadata, anonymity and accessibility checks. \\
+19 January & Submit early, inspect uploaded files and save confirmation. \\
+21 January & Official deadline; reserve final interval for essential corrections. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Proposed roles:} Maia leads implementation, provenance, protocol drafts, sessions, analysis and writing. Hiroko reviews language, meaning rubrics, imagery, and potential calligraphy. Dave advises HCI framing, design, quantitative analysis, and publication. Mike advises wall operations and sound. Confirm sponsor and correspondence roles explicitly.
+
+Reserve approximately 8--12 project hours weekly initially, with extra time for sessions and revision. Twenty sessions require about 20 booked wall-hours plus pilots and processing. Each scorer would assess approximately 800 responses for 20 completers (20 characters at two times). Budget this work alongside development. Resource categories include participant compensation, licensed assets/font access where needed, approved storage/transcription, printing, registration, and travel. Confirm funding before purchases.
+
+\section{Decisions for Dave and Hiroko}
+\begin{enumerate}
+\item Does the proposed RQ ordering reflect the requested learning assessment?
+\item Are the sample, recruitment scope, and 40--45-minute appointment feasible?
+\item Does testing all 20 characters and ensuring coverage preserve the intended artistic experience?
+\item Which synonyms, alternate senses, and near-matches should receive each score?
+\item What audio policy and initial font should be frozen for the study?
+\item Which features are essential before piloting, and what can wait until afterward?
+\item Who will review/scoring-check data and approve the final submission?
+\item What evidence and scope would justify proceeding with a CHI submission if the schedule slips?
+\end{enumerate}
+
+\appendix
+\newpage
+\section{Core Kanji and Candidate Treatments}\label{app:kanji}
+The characters and meanings follow Hiroko's list. Treatments are proposed, not all implemented. These target senses do not exhaust each character's meanings.
+\begin{longtable}{rp{0.08\linewidth}p{0.18\linewidth}p{0.56\linewidth}}
+\toprule No. & Kanji & Meaning & Candidate treatment / design consideration \\
+\midrule\endhead
+1 & \kanji{花} & Flower & Flowers bloom and petals emerge from the transformation. \\
+2 & \kanji{月} & Moon & Moon appears within a changing night environment. \\
+3 & \kanji{日} & Sun & Sun and illumination develop; distinguish selected sun sense from day. \\
+4 & \kanji{虹} & Rainbow & Colored arc forms within the environment. \\
+5 & \kanji{山} & Mountain & Mountain forms develop across the wall. \\
+6 & \kanji{雨} & Rain & Rainfall changes the scene; preserve target visibility. \\
+7 & \kanji{雷} & Thunder & Storm and agreed audio treatment; review thunder/lightning ambiguity. \\
+8 & \kanji{鳥} & Bird & Bird forms emerge and fly across the wall. \\
+9 & \kanji{川} & River & Flow in a visible channel distinguishes river from water generally. \\
+10 & \kanji{魚} & Fish & Fish emerge and swim with recognizable motion. \\
+11 & \kanji{木} & Tree & One tree develops through branching growth. \\
+12 & \kanji{星} & Star & Stars emerge; distinguish from moon/night. \\
+13 & \kanji{森} & Forest & Multiple trees form a wooded environment. \\
+14 & \kanji{海} & Sea/Ocean & Broad water surface, waves and horizon. \\
+15 & \kanji{雪} & Snow & Snow falls or accumulates with adequate contrast. \\
+16 & \kanji{馬} & Horse & Horse emerges and moves with recognizable form. \\
+17 & \kanji{雲} & Cloud & Clouds form and drift without rainfall dominating the cue. \\
+18 & \kanji{火} & Fire & Flames or embers with restrained brightness changes. \\
+19 & \kanji{水} & Water & Liquid motion and ripples without a specific landscape. \\
+20 & \kanji{滝} & Waterfall & A descending cascade distinguishes it from generic flow. \\
+\bottomrule
+\end{longtable}
+\textbf{Backups:} \kanji{氷} ice; \kanji{砂} sand; \kanji{桜} cherry blossom; \kanji{蓮} lotus; \kanji{藤} wisteria. These are alternatives, not five additional test items. Any substitution needs PI agreement and updated stimuli/rubric before collection.
+
+\section{Draft Instruments and Scripts}
+\subsection{Background}
+Ask about Japanese study/use, other character-using languages, prior Kanji Wall exposure, interactive-art experience, and any desired adjustment to the response method or physical setup. Do not require a diagnosis to request an adjustment.
+
+\subsection{Meaning test}
+``What do you think this character means? You may write `I don't know.' Please do not use a dictionary, translation tool, or another person.'' If retained: ``How confident are you? 1 = guessing; 5 = very confident.'' Show one glyph and give no correctness feedback between tests.
+
+\subsection{Wall script}
+\textbf{Invitation:} ``Please explore this installation in whatever way feels comfortable. You may stop or ask for help at any time.''
+
+\textbf{First help:} ``There is a welcome message on the wall that explains how to begin.''
+
+\textbf{Second help:} ``You can touch a falling character to activate a scene.''
+
+\textbf{Structured phase:} ``Next, we will make sure you have a chance to interact with each selected character. Please touch each character as it appears and watch its response. You do not need to say its meaning aloud.''
+
+\textbf{Coverage prompt:} ``This is one character we have not yet visited. Please look for it on the wall and touch it when you can reach it.''
+
+Avoid translations, praise for correct guesses, or meaning-focused think-aloud before the post-test. Keep post-test before interviews to reduce cueing.
+
+\subsection{Interview guide}
+\begin{enumerate}
+\item How would you describe the experience in your own words?
+\item How did you decide what to do when you first approached the wall?
+\item Choose a transformation that felt clearly connected to its character. What did you notice and how did you interpret it?
+\item Choose one that was harder to interpret. What meanings did you consider?
+\item What relationship, if any, did you notice between the written form and the scene?
+\item Did motion, sound, or the transition affect your interpretation? How?
+\item Was there anything you tried to touch that did not respond as expected?
+\item Did you want to revisit a character? Why? What would you change?
+\end{enumerate}
+Any replay during the interview is post-assessment exposure and must be excluded from the pre/post exposure window.
+
+\section{Observation and Data Dictionary}
+\begin{longtable}{p{0.26\linewidth}p{0.66\linewidth}}
+\toprule Record & Fields/definition \\
+\midrule\endhead
+Session & Participant ID, build/configuration, font, initial audio, dates/times, researcher, deviations. No name in event files. \\
+Character event & Stable ID, time, phase, event type: displayed, attempted, activated, completed, interrupted; audio state. \\
+Attempt & Observed touch directed at a glyph; distinguish a near miss from a registered activation. Reconcile observation with system logs. \\
+Coverage row & Participant/character, pre score, activation, completion, attention uncertainty, repeats, post score, validity notes. \\
+Onboarding & First attempt/success times, help level/time, response to instructions, later explanation. \\
+Controls & Sound toggles and About use, including overlay interference. \\
+Experience & Reach, movement, touching generated imagery, waiting/revisiting, and permitted quotes. \\
+\bottomrule
+\end{longtable}
+Collect coordinates only for a defined reach/accuracy question. Implement scene-completion events before collection. Keep observations separate from logs so inferred attention is not presented as a sensor measurement.
+
+\section{Public Copy and Publication Figures}
+The PIs' starting About text identifies the artistic goal, credits Dave Berque, Hiroko Chiba and Maia Le for design and Maia for implementation, acknowledges Tenzer Technology Center and ITAP, and describes teamLab inspiration. Verify the specific teamLab exhibit and final credits before formal publication rather than citing an unidentified work.
+
+The requested welcome message explicitly explains how to activate a character. A wall-specific wording for PI review is:
+\begin{quote}
+Welcome to the Kanji Wall, an immersive artistic experience that connects Kanji characters to their meanings. To explore, touch a falling Kanji character to see its meaning unfold. Enjoy!
+\end{quote}
+Changing ``click'' to ``touch'' is a proposed edit, not an approved replacement. Freeze final copy for the study. It should explain the action without revealing individual translations. Preserve public credits while preparing appropriately anonymous review figures.
+
+\newpage
+\begin{thebibliography}{6}
+\bibitem{cheng2020} Yong Cheng, Sijia Ma, Jun Chen, Wenhui Guo, Yingying Zhao, Yaolin Chen, Jingtao Wang, Yushi Jing, and Wenli Zhu. 2020. Living Jiagu: Enabling Constructive Etymology for Chinese Learning. In \emph{CHI EA '20}, 1--4. ACM. \url{https://doi.org/10.1145/3334480.3383167}.
+\bibitem{li2024} Jingke Li, Guoyu Sun, Congyun Tang, Wenjuan Chen, Wenwen Yang, Wenxuan Kou, Zhonghe Ruan, Wanqing Ma, and Xuran Nie. 2024. Silk Road Journey: A Real-time AI-based Interactive Art Installation for Silk Road Cultural Reenactment and Experience. In \emph{CHI EA '24}, 1--5. ACM. \url{https://doi.org/10.1145/3613905.3648655}.
+\bibitem{vanrenswouw2022} Loes van Renswouw, Yvonne van Hamersveld, Hugo Huibers, Steven Vos, and Carine Lallemand. 2022. Fontana: Triggering Physical Activity and Social Connectedness through an Interactive Water Installation. In \emph{CHI '22 Extended Abstracts}, Article 462, 1--7. ACM. \url{https://doi.org/10.1145/3491101.3519765}.
+\bibitem{mueller2012} J\"org M\"uller, Robert Walter, Gilles Bailly, Michael Nischt, and Florian Alt. 2012. Looking Glass: A Field Study on Noticing Interactivity of a Shop Window. In \emph{Proceedings of the SIGCHI Conference on Human Factors in Computing Systems} (CHI '12), 297--306. ACM. \url{https://doi.org/10.1145/2207676.2207718}.
+\bibitem{wu2012} Hong Wu. 2012. \emph{HydraScope: Interaction and Application of Wall Sized Display}. Technical Report UCB/EECS-2012-149, University of California, Berkeley. \url{https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-149.html}.
+\bibitem{smith2013} Kel Smith. 2013. Designing for Tomorrow's Digital Outcasts. In \emph{Digital Outcasts: Moving Technology Forward without Leaving People Behind}, Chapter 9, 215--233. Morgan Kaufmann. \url{https://doi.org/10.1016/B978-0-12-404705-1.00009-1}.
+\end{thebibliography}
+\end{document}
