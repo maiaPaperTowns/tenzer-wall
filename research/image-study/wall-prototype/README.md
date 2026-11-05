@@ -1,6 +1,6 @@
 ## Web and projection display
 
-The default web URL shows a single complete photograph, scaled proportionally to the viewport, with a neutral background in unused space. No blurred duplicate is drawn. Projection uses `?display=wall`, which fills the viewport with a centered crop of the original. Review frames in Sheet/Form retain complete originals.
+All five photo scenes fill the browser and projection viewport proportionally, with centered cropping at the edges as needed. No blurred duplicate or letterbox background is drawn. Each theme retains its animation. Review frames in Sheet/Form retain complete originals. Stock preview watermarks remain until licensed originals are supplied.
 
 ## Full-subject framing update
 
