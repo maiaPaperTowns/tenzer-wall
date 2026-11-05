@@ -1,5 +1,9 @@
 # Living Ink — Tenzer Kanji Wall
 
+## Current five-photo test
+
+The default wall now tests only **雪 Snow, 雲 Cloud, 火 Fire, 水 Water, and 滝 Waterfall**, using five photo animations and consistent 32:9 review crops. The intro, controls, theme and background remain in place. See [test notes](research/image-study/wall-prototype/README.md). The full 29-character configuration is archived as `config-full-artwork-20261029.json`; the older artwork documentation below describes that full set.
+
 An immersive, touch-responsive artwork that connects Kanji characters with their meanings. Falling characters become animated landscapes, plants, animals and weather when selected.
 
 **[Explore the live Kanji Wall](https://maiapapertowns.github.io/tenzer-wall-site/)** · [Source repository](https://github.com/maiaPaperTowns/tenzer-wall) · [Deployment repository](https://github.com/maiaPaperTowns/tenzer-wall-site)

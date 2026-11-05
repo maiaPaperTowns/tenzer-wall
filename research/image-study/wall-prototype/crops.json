@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "IMG_081",
+    "concept": "Flower",
+    "kanji": "花",
+    "candidate": 1,
+    "credit": "IRINA NAZAROVA",
+    "sourceUrl": "https://www.istockphoto.com/photo/many-colorful-tulips-close-up-in-the-garden-of-keukenhof-park-floral-background-with-gm2013430942-560987879",
+    "assetId": "2013430942",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_081.jpg"
+  },
+  {
+    "id": "IMG_039",
+    "concept": "Flower",
+    "kanji": "花",
+    "candidate": 2,
+    "credit": "nukopic",
+    "sourceUrl": "https://www.istockphoto.com/photo/beautiful-flower-garden-scenery-with-a-variety-of-flowers-in-bloom-gm2211253732-628251119",
+    "assetId": "2211253732",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_039.jpg"
+  },
+  {
+    "id": "IMG_038",
+    "concept": "Flower",
+    "kanji": "花",
+    "candidate": 3,
+    "credit": "L Feddes",
+    "sourceUrl": "https://www.istockphoto.com/photo/flowers-wall-background-with-amazing-red-orange-pink-purple-green-and-white-gm1190817350-337701117",
+    "assetId": "1190817350",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_038.jpg"
+  },
+  {
+    "id": "IMG_089",
+    "concept": "Flower",
+    "kanji": "花",
+    "candidate": 4,
+    "credit": "Katya Slavashevich",
+    "sourceUrl": "https://www.istockphoto.com/photo/spring-flowers-on-a-blue-background-gm2197953715-615866513",
+    "assetId": "2197953715",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_089.jpg"
+  },
+  {
+    "id": "IMG_037",
+    "concept": "Flower",
+    "kanji": "花",
+    "candidate": 5,
+    "credit": "AUDHRAY BORDES",
+    "sourceUrl": "https://www.istockphoto.com/photo/summer-fields-gm1403900652-456292548",
+    "assetId": "1403900652",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_037.jpg"
+  },
+  {
+    "id": "IMG_003",
+    "concept": "Moon",
+    "kanji": "月",
+    "candidate": 1,
+    "credit": "Tim Delmar",
+    "sourceUrl": "https://www.istockphoto.com/photo/very-high-resolution-full-moon-pitch-black-sky-and-plenty-of-room-for-contrast-gm1985554487-559273104",
+    "assetId": "1985554487",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.43,
+    "file": "assets/wall-crops/IMG_003.jpg"
+  },
+  {
+    "id": "IMG_057",
+    "concept": "Moon",
+    "kanji": "月",
+    "candidate": 2,
+    "credit": "kdshutterman",
+    "sourceUrl": "https://www.istockphoto.com/photo/nighttime-sky-with-clouds-full-moon-would-make-great-background-gm521495284-91368695",
+    "assetId": "521495284",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.43,
+    "file": "assets/wall-crops/IMG_057.jpg"
+  },
+  {
+    "id": "IMG_085",
+    "concept": "Moon",
+    "kanji": "月",
+    "candidate": 3,
+    "credit": "subjug",
+    "sourceUrl": "https://www.istockphoto.com/photo/dramatic-sky-with-full-moon-gm1332557788-415374724",
+    "assetId": "1332557788",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.43,
+    "file": "assets/wall-crops/IMG_085.jpg"
+  },
+  {
+    "id": "IMG_018",
+    "concept": "Moon",
+    "kanji": "月",
+    "candidate": 4,
+    "credit": "gettinthere",
+    "sourceUrl": "https://www.istockphoto.com/photo/earth-rising-over-the-moon-gm2218775597-635291286",
+    "assetId": "2218775597",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.43,
+    "file": "assets/wall-crops/IMG_018.jpg"
+  },
+  {
+    "id": "IMG_103",
+    "concept": "Moon",
+    "kanji": "月",
+    "candidate": 5,
+    "credit": "Kevin Wells",
+    "sourceUrl": "https://www.istockphoto.com/photo/full-moon-on-a-clear-night-gm978406234-265935275",
+    "assetId": "978406234",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.43,
+    "file": "assets/wall-crops/IMG_103.jpg"
+  },
+  {
+    "id": "IMG_073",
+    "concept": "Sun",
+    "kanji": "日",
+    "candidate": 1,
+    "credit": "SCM Jeans",
+    "sourceUrl": "https://www.istockphoto.com/photo/sydney-sunrise-gm1471184975-501840293",
+    "assetId": "1471184975",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_073.jpg"
+  },
+  {
+    "id": "IMG_015",
+    "concept": "Sun",
+    "kanji": "日",
+    "candidate": 2,
+    "credit": "Xurzon",
+    "sourceUrl": "https://www.istockphoto.com/photo/glowing-sun-on-orange-sky-gm1257088461-368287846",
+    "assetId": "1257088461",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_015.jpg"
+  },
+  {
+    "id": "IMG_072",
+    "concept": "Sun",
+    "kanji": "日",
+    "candidate": 3,
+    "credit": "aleksandarvelasevic",
+    "sourceUrl": "https://www.istockphoto.com/vector/abstract-retro-sun-background-gm2206607311-623910897",
+    "assetId": "2206607311",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_072.jpg"
+  },
+  {
+    "id": "IMG_090",
+    "concept": "Sun",
+    "kanji": "日",
+    "candidate": 4,
+    "credit": "hakkiarslan",
+    "sourceUrl": "https://www.istockphoto.com/vector/yellow-sun-icon-clip-art-symbol-isolated-on-white-background-gm957815768-261546086",
+    "assetId": "957815768",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_090.jpg"
+  },
+  {
+    "id": "IMG_025",
+    "concept": "Sun",
+    "kanji": "日",
+    "candidate": 5,
+    "credit": "Dimitris66",
+    "sourceUrl": "https://www.istockphoto.com/vector/summer-abstract-background-gm1386624329-444806560",
+    "assetId": "1386624329",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_025.jpg"
+  },
+  {
+    "id": "IMG_077",
+    "concept": "Rainbow",
+    "kanji": "虹",
+    "candidate": 1,
+    "credit": "Naddiya",
+    "sourceUrl": "https://www.istockphoto.com/vector/rainbow-isolated-on-white-vector-illustration-gm648473846-117827957",
+    "assetId": "648473846",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_077.jpg"
+  },
+  {
+    "id": "IMG_091",
+    "concept": "Rainbow",
+    "kanji": "虹",
+    "candidate": 2,
+    "credit": "PongMoji",
+    "sourceUrl": "https://www.istockphoto.com/photo/cloudscape-with-blue-sky-and-white-clouds-rainbow-gm1013115122-272838493",
+    "assetId": "1013115122",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_091.jpg"
+  },
+  {
+    "id": "IMG_080",
+    "concept": "Rainbow",
+    "kanji": "虹",
+    "candidate": 3,
+    "credit": "StarLineArts",
+    "sourceUrl": "https://www.istockphoto.com/vector/wavy-style-blurred-rainbow-spectrum-background-design-gm2197020966-615005545",
+    "assetId": "2197020966",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_080.jpg"
+  },
+  {
+    "id": "IMG_012",
+    "concept": "Rainbow",
+    "kanji": "虹",
+    "candidate": 4,
+    "credit": "shima",
+    "sourceUrl": "https://www.istockphoto.com/vector/rainbow-illustration-painted-in-watercolor-gm1224952440-360373251",
+    "assetId": "1224952440",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_012.jpg"
+  },
+  {
+    "id": "IMG_019",
+    "concept": "Rainbow",
+    "kanji": "虹",
+    "candidate": 5,
+    "credit": "yoko obata",
+    "sourceUrl": "https://www.istockphoto.com/vector/illustration-of-a-rainbow-drawn-in-watercolor-gm1369055430-438892960",
+    "assetId": "1369055430",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_019.jpg"
+  },
+  {
+    "id": "IMG_058",
+    "concept": "Mountain",
+    "kanji": "山",
+    "candidate": 1,
+    "credit": "hadynyah",
+    "sourceUrl": "https://www.istockphoto.com/photo/75mpix-panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal-gm1341288649-421084677",
+    "assetId": "1341288649",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_058.jpg"
+  },
+  {
+    "id": "IMG_050",
+    "concept": "Mountain",
+    "kanji": "山",
+    "candidate": 2,
+    "credit": "lightphoto",
+    "sourceUrl": "https://www.istockphoto.com/photo/last-light-on-mount-sneffels-gm1453838542-489669508",
+    "assetId": "1453838542",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_050.jpg"
+  },
+  {
+    "id": "IMG_014",
+    "concept": "Mountain",
+    "kanji": "山",
+    "candidate": 3,
+    "credit": "ekolara",
+    "sourceUrl": "https://www.istockphoto.com/vector/vector-morning-on-a-mountain-lake-gm2216361815-633041540",
+    "assetId": "2216361815",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_014.jpg"
+  },
+  {
+    "id": "IMG_063",
+    "concept": "Mountain",
+    "kanji": "山",
+    "candidate": 4,
+    "credit": "Gary Gray",
+    "sourceUrl": "https://www.istockphoto.com/photo/the-scenic-beauty-of-the-colorado-rocky-mountains-on-the-dallas-divide-gm864568096-143815963",
+    "assetId": "864568096",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_063.jpg"
+  },
+  {
+    "id": "IMG_052",
+    "concept": "Mountain",
+    "kanji": "山",
+    "candidate": 5,
+    "credit": "Dmytro Kosmenko",
+    "sourceUrl": "https://www.istockphoto.com/photo/ama-dablam-peak-near-the-village-of-dingboche-in-the-khumbu-area-of-nepal-on-the-gm888011336-246377301",
+    "assetId": "888011336",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_052.jpg"
+  },
+  {
+    "id": "IMG_096",
+    "concept": "Rain",
+    "kanji": "雨",
+    "candidate": 1,
+    "credit": "draganab",
+    "sourceUrl": "https://www.istockphoto.com/photo/rain-drops-background-gm1251353875-365170552",
+    "assetId": "1251353875",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_096.jpg"
+  },
+  {
+    "id": "IMG_006",
+    "concept": "Rain",
+    "kanji": "雨",
+    "candidate": 2,
+    "credit": "iiievgeniy",
+    "sourceUrl": "https://www.istockphoto.com/photo/summer-rain-raindrops-bad-weather-depression-gm1476189983-505458678",
+    "assetId": "1476189983",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_006.jpg"
+  },
+  {
+    "id": "IMG_076",
+    "concept": "Rain",
+    "kanji": "雨",
+    "candidate": 3,
+    "credit": "coffeekai",
+    "sourceUrl": "https://www.istockphoto.com/photo/raining-dark-cloudy-storm-cloud-nature-in-rainy-season-gm1458711139-493234181",
+    "assetId": "1458711139",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_076.jpg"
+  },
+  {
+    "id": "IMG_095",
+    "concept": "Rain",
+    "kanji": "雨",
+    "candidate": 4,
+    "credit": "c1a1p1c1o1m1",
+    "sourceUrl": "https://www.istockphoto.com/photo/cars-driving-on-wet-road-in-the-rain-with-headlights-gm902497530-248941408",
+    "assetId": "902497530",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_095.jpg"
+  },
+  {
+    "id": "IMG_071",
+    "concept": "Rain",
+    "kanji": "雨",
+    "candidate": 5,
+    "credit": "Daniel Tadevosyan",
+    "sourceUrl": "https://www.istockphoto.com/photo/heavy-raindrops-splashing-on-the-ground-gm2154519559-575385397",
+    "assetId": "2154519559",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_071.jpg"
+  },
+  {
+    "id": "IMG_036",
+    "concept": "Thunder",
+    "kanji": "雷",
+    "candidate": 1,
+    "credit": "Christian Peters",
+    "sourceUrl": "https://www.istockphoto.com/photo/thunder-storm-with-lightning-at-the-chiemgau-alps-foothills-bavaria-germany-gm2198077518-615977712",
+    "assetId": "2198077518",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_036.jpg"
+  },
+  {
+    "id": "IMG_040",
+    "concept": "Thunder",
+    "kanji": "雷",
+    "candidate": 2,
+    "credit": "Slavica",
+    "sourceUrl": "https://www.istockphoto.com/photo/lightning-during-summer-storm-gm2217669662-634245966",
+    "assetId": "2217669662",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_040.jpg"
+  },
+  {
+    "id": "IMG_045",
+    "concept": "Thunder",
+    "kanji": "雷",
+    "candidate": 3,
+    "credit": "mdesigner125",
+    "sourceUrl": "https://www.istockphoto.com/photo/lightning-bolts-strike-from-a-sunset-storm-gm846469400-138660853",
+    "assetId": "846469400",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_045.jpg"
+  },
+  {
+    "id": "IMG_078",
+    "concept": "Thunder",
+    "kanji": "雷",
+    "candidate": 4,
+    "credit": "jerbarber",
+    "sourceUrl": "https://www.istockphoto.com/photo/curtain-of-lightning-over-city-gm186538582-28466382",
+    "assetId": "186538582",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_078.jpg"
+  },
+  {
+    "id": "IMG_067",
+    "concept": "Thunder",
+    "kanji": "雷",
+    "candidate": 5,
+    "credit": "Slavica",
+    "sourceUrl": "https://www.istockphoto.com/photo/lightning-during-summer-storm-gm940296124-257056780",
+    "assetId": "940296124",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_067.jpg"
+  },
+  {
+    "id": "IMG_031",
+    "concept": "Bird",
+    "kanji": "鳥",
+    "candidate": 1,
+    "credit": "eurotravel",
+    "sourceUrl": "https://www.istockphoto.com/photo/barnacle-goose-gm641101778-116072899",
+    "assetId": "641101778",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.47,
+    "file": "assets/wall-crops/IMG_031.jpg"
+  },
+  {
+    "id": "IMG_020",
+    "concept": "Bird",
+    "kanji": "鳥",
+    "candidate": 2,
+    "credit": "izumikobayashi",
+    "sourceUrl": "https://www.istockphoto.com/vector/flying-bird-gm1323115488-408876838",
+    "assetId": "1323115488",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.47,
+    "file": "assets/wall-crops/IMG_020.jpg"
+  },
+  {
+    "id": "IMG_094",
+    "concept": "Bird",
+    "kanji": "鳥",
+    "candidate": 3,
+    "credit": "Nataba",
+    "sourceUrl": "https://www.istockphoto.com/photo/bird-robin-sitting-on-cherry-branches-with-white-flowers-on-a-sunny-spring-day-gm1489154382-514130208",
+    "assetId": "1489154382",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.47,
+    "file": "assets/wall-crops/IMG_094.jpg"
+  },
+  {
+    "id": "IMG_017",
+    "concept": "Bird",
+    "kanji": "鳥",
+    "candidate": 4,
+    "credit": "pchoui",
+    "sourceUrl": "https://www.istockphoto.com/photo/eastern-bluebird-in-flight-couple-male-and-female-gm2153576766-574504203",
+    "assetId": "2153576766",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.47,
+    "file": "assets/wall-crops/IMG_017.jpg"
+  },
+  {
+    "id": "IMG_093",
+    "concept": "Bird",
+    "kanji": "鳥",
+    "candidate": 5,
+    "credit": "FGorgun",
+    "sourceUrl": "https://www.istockphoto.com/photo/seagulls-gm534050814-94695021",
+    "assetId": "534050814",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.47,
+    "file": "assets/wall-crops/IMG_093.jpg"
+  },
+  {
+    "id": "IMG_065",
+    "concept": "River",
+    "kanji": "川",
+    "candidate": 1,
+    "credit": "AscentXmedia",
+    "sourceUrl": "https://www.istockphoto.com/photo/aerial-view-of-a-river-flowing-through-a-temperate-rainforest-gm1329251224-413053904",
+    "assetId": "1329251224",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_065.jpg"
+  },
+  {
+    "id": "IMG_060",
+    "concept": "River",
+    "kanji": "川",
+    "candidate": 2,
+    "credit": "mariusz_prusaczyk",
+    "sourceUrl": "https://www.istockphoto.com/photo/gambia-mangroves-aerial-view-of-mangrove-forest-in-gambia-photo-made-by-drone-from-gm1190336132-337391928",
+    "assetId": "1190336132",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_060.jpg"
+  },
+  {
+    "id": "IMG_061",
+    "concept": "River",
+    "kanji": "川",
+    "candidate": 3,
+    "credit": "nazar_ab",
+    "sourceUrl": "https://www.istockphoto.com/photo/river-next-to-pine-forest-gm1070955616-286577632",
+    "assetId": "1070955616",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_061.jpg"
+  },
+  {
+    "id": "IMG_086",
+    "concept": "River",
+    "kanji": "川",
+    "candidate": 4,
+    "credit": "DaLiu",
+    "sourceUrl": "https://www.istockphoto.com/photo/austrian-alps-starting-famous-krimml-waterfalls-gm611622826-105236285",
+    "assetId": "611622826",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_086.jpg"
+  },
+  {
+    "id": "IMG_011",
+    "concept": "River",
+    "kanji": "川",
+    "candidate": 5,
+    "credit": "Bobbushphoto",
+    "sourceUrl": "https://www.istockphoto.com/photo/wizard-falls-on-the-metolius-river-autumn-in-oregon-gm1282389397-380136422",
+    "assetId": "1282389397",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_011.jpg"
+  },
+  {
+    "id": "IMG_034",
+    "concept": "Fish",
+    "kanji": "魚",
+    "candidate": 1,
+    "credit": "Nuture",
+    "sourceUrl": "https://www.istockphoto.com/photo/underwater-wild-world-with-tuna-fishes-gm1129782401-298570423",
+    "assetId": "1129782401",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_034.jpg"
+  },
+  {
+    "id": "IMG_079",
+    "concept": "Fish",
+    "kanji": "魚",
+    "candidate": 2,
+    "credit": "Nuture",
+    "sourceUrl": "https://www.istockphoto.com/photo/underwater-view-with-tuna-school-fish-in-ocean-sea-life-in-transparent-water-gm1189904571-337085267",
+    "assetId": "1189904571",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_079.jpg"
+  },
+  {
+    "id": "IMG_002",
+    "concept": "Fish",
+    "kanji": "魚",
+    "candidate": 3,
+    "credit": "Damocean",
+    "sourceUrl": "https://www.istockphoto.com/photo/sea-bream-and-underwater-surface-gm863843390-143294187",
+    "assetId": "863843390",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_002.jpg"
+  },
+  {
+    "id": "IMG_049",
+    "concept": "Fish",
+    "kanji": "魚",
+    "candidate": 4,
+    "credit": "OGri",
+    "sourceUrl": "https://www.istockphoto.com/vector/goldfish-watercolor-hand-drawn-illustration-in-vector-gm483486928-70525885",
+    "assetId": "483486928",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_049.jpg"
+  },
+  {
+    "id": "IMG_030",
+    "concept": "Fish",
+    "kanji": "魚",
+    "candidate": 5,
+    "credit": "aekgasit mabobut",
+    "sourceUrl": "https://www.istockphoto.com/photo/fish-painting-with-watercolor-on-white-paper-gm1147563885-309604576",
+    "assetId": "1147563885",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_030.jpg"
+  },
+  {
+    "id": "IMG_004",
+    "concept": "Tree",
+    "kanji": "木",
+    "candidate": 1,
+    "credit": "Tim Delmar",
+    "sourceUrl": "https://www.istockphoto.com/photo/a-view-up-into-the-trees-direction-sky-gm1317323736-404791748",
+    "assetId": "1317323736",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_004.jpg"
+  },
+  {
+    "id": "IMG_033",
+    "concept": "Tree",
+    "kanji": "木",
+    "candidate": 2,
+    "credit": "ChrisHepburn",
+    "sourceUrl": "https://www.istockphoto.com/photo/sycamore-tree-in-summer-field-at-sunset-england-uk-gm476116580-66350103",
+    "assetId": "476116580",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_033.jpg"
+  },
+  {
+    "id": "IMG_043",
+    "concept": "Tree",
+    "kanji": "木",
+    "candidate": 3,
+    "credit": "SergeyIT",
+    "sourceUrl": "https://www.istockphoto.com/photo/mighty-tree-with-green-leaves-gm177310390-20166590",
+    "assetId": "177310390",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_043.jpg"
+  },
+  {
+    "id": "IMG_009",
+    "concept": "Tree",
+    "kanji": "木",
+    "candidate": 4,
+    "credit": "DNY59",
+    "sourceUrl": "https://www.istockphoto.com/photo/oak-tree-gm183807813-16119754",
+    "assetId": "183807813",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_009.jpg"
+  },
+  {
+    "id": "IMG_082",
+    "concept": "Tree",
+    "kanji": "木",
+    "candidate": 5,
+    "credit": "blew_i",
+    "sourceUrl": "https://www.istockphoto.com/photo/evergreen-tree-gm507681714-84842503",
+    "assetId": "507681714",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_082.jpg"
+  },
+  {
+    "id": "IMG_066",
+    "concept": "Star",
+    "kanji": "星",
+    "candidate": 1,
+    "credit": "seamartini",
+    "sourceUrl": "https://www.istockphoto.com/vector/starry-space-night-blue-sky-seamless-pattern-gm1509170124-523764802",
+    "assetId": "1509170124",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_066.jpg"
+  },
+  {
+    "id": "IMG_102",
+    "concept": "Star",
+    "kanji": "星",
+    "candidate": 2,
+    "credit": "WhataWin",
+    "sourceUrl": "https://www.istockphoto.com/vector/black-vector-background-with-gold-stars-illustration-gm1371842147-441102588",
+    "assetId": "1371842147",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_102.jpg"
+  },
+  {
+    "id": "IMG_101",
+    "concept": "Star",
+    "kanji": "星",
+    "candidate": 3,
+    "credit": "da-kuk",
+    "sourceUrl": "https://www.istockphoto.com/photo/majestic-stars-and-mikly-way-in-the-mountains-gm2225770411-641763844",
+    "assetId": "2225770411",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_101.jpg"
+  },
+  {
+    "id": "IMG_044",
+    "concept": "Star",
+    "kanji": "星",
+    "candidate": 4,
+    "credit": "Jehan-Jehan",
+    "sourceUrl": "https://www.istockphoto.com/vector/stars-confetti-background-gold-star-banner-border-gm2164237466-584524116",
+    "assetId": "2164237466",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_044.jpg"
+  },
+  {
+    "id": "IMG_035",
+    "concept": "Star",
+    "kanji": "星",
+    "candidate": 5,
+    "credit": "Nirad",
+    "sourceUrl": "https://www.istockphoto.com/photo/gold-glitter-star-paper-cut-on-white-background-gm896715268-247575205",
+    "assetId": "896715268",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_035.jpg"
+  },
+  {
+    "id": "IMG_056",
+    "concept": "Forest",
+    "kanji": "森",
+    "candidate": 1,
+    "credit": "audioundwerbung",
+    "sourceUrl": "https://www.istockphoto.com/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays-gm1419410282-465774617",
+    "assetId": "1419410282",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_056.jpg"
+  },
+  {
+    "id": "IMG_026",
+    "concept": "Forest",
+    "kanji": "森",
+    "candidate": 2,
+    "credit": "merc67",
+    "sourceUrl": "https://www.istockphoto.com/photo/aerial-drone-view-of-green-lush-forest-gm1502686868-522796707",
+    "assetId": "1502686868",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_026.jpg"
+  },
+  {
+    "id": "IMG_027",
+    "concept": "Forest",
+    "kanji": "森",
+    "candidate": 3,
+    "credit": "Clark Ahlstrom",
+    "sourceUrl": "https://www.istockphoto.com/photo/pine-tree-forest-on-a-hill-desktop-background-gm1417433518-464582472",
+    "assetId": "1417433518",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_027.jpg"
+  },
+  {
+    "id": "IMG_016",
+    "concept": "Forest",
+    "kanji": "森",
+    "candidate": 4,
+    "credit": "Roksana Bashyrova",
+    "sourceUrl": "https://www.istockphoto.com/photo/misty-mountain-landscape-gm1257605805-368620870",
+    "assetId": "1257605805",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_016.jpg"
+  },
+  {
+    "id": "IMG_022",
+    "concept": "Forest",
+    "kanji": "森",
+    "candidate": 5,
+    "credit": "Vasil Dimitrov",
+    "sourceUrl": "https://www.istockphoto.com/photo/morning-fog-over-a-beautiful-lake-surrounded-by-pine-forest-stock-photo-gm1342007894-421565224",
+    "assetId": "1342007894",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_022.jpg"
+  },
+  {
+    "id": "IMG_098",
+    "concept": "Sea / Ocean",
+    "kanji": "海",
+    "candidate": 1,
+    "credit": "Philip Thurston",
+    "sourceUrl": "https://www.istockphoto.com/photo/clean-ocean-waves-breaking-on-white-sand-beach-with-turquoise-emerald-coloured-water-gm1302343043-394115247",
+    "assetId": "1302343043",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_098.jpg"
+  },
+  {
+    "id": "IMG_021",
+    "concept": "Sea / Ocean",
+    "kanji": "海",
+    "candidate": 2,
+    "credit": "hocus-focus",
+    "sourceUrl": "https://www.istockphoto.com/photo/aerial-view-of-clear-turquoise-sea-gm956431518-261142734",
+    "assetId": "956431518",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_021.jpg"
+  },
+  {
+    "id": "IMG_074",
+    "concept": "Sea / Ocean",
+    "kanji": "海",
+    "candidate": 3,
+    "credit": "graphixel",
+    "sourceUrl": "https://www.istockphoto.com/photo/aerial-drone-view-of-waves-gm1488335104-513540071",
+    "assetId": "1488335104",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_074.jpg"
+  },
+  {
+    "id": "IMG_042",
+    "concept": "Sea / Ocean",
+    "kanji": "海",
+    "candidate": 4,
+    "credit": "Larysa Pashkevich",
+    "sourceUrl": "https://www.istockphoto.com/photo/beautiful-background-image-of-the-coast-of-a-tropical-island-turning-into-the-gm2154167230-575055984",
+    "assetId": "2154167230",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_042.jpg"
+  },
+  {
+    "id": "IMG_083",
+    "concept": "Sea / Ocean",
+    "kanji": "海",
+    "candidate": 5,
+    "credit": "NiseriN",
+    "sourceUrl": "https://www.istockphoto.com/photo/swimming-in-summer-ocean-at-sunset-point-of-view-gm2259941563-672843103",
+    "assetId": "2259941563",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_083.jpg"
+  },
+  {
+    "id": "IMG_105",
+    "concept": "Snow",
+    "kanji": "雪",
+    "candidate": 1,
+    "credit": "Larysa Pashkevich",
+    "sourceUrl": "https://www.istockphoto.com/photo/beautifull-background-on-a-christmas-theme-with-snowdrifts-snowfall-and-a-blurred-gm1428401936-471901908",
+    "assetId": "1428401936",
+    "set": "Primary",
+    "selected": true,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_105.jpg"
+  },
+  {
+    "id": "IMG_024",
+    "concept": "Snow",
+    "kanji": "雪",
+    "candidate": 2,
+    "credit": "Eerik",
+    "sourceUrl": "https://www.istockphoto.com/photo/winter-branch-covered-with-snow-gm185325220-19267951",
+    "assetId": "185325220",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_024.jpg"
+  },
+  {
+    "id": "IMG_075",
+    "concept": "Snow",
+    "kanji": "雪",
+    "candidate": 3,
+    "credit": "Wirestock",
+    "sourceUrl": "https://www.istockphoto.com/photo/wide-shot-of-a-road-fully-covered-by-snow-with-pine-trees-on-both-sides-and-car-gm1440264506-480295032",
+    "assetId": "1440264506",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_075.jpg"
+  },
+  {
+    "id": "IMG_054",
+    "concept": "Snow",
+    "kanji": "雪",
+    "candidate": 4,
+    "credit": "AlexRaths",
+    "sourceUrl": "https://www.istockphoto.com/photo/female-hands-in-knitted-mittens-with-snowy-heart-against-snow-background-gm1296158976-389661592",
+    "assetId": "1296158976",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_054.jpg"
+  },
+  {
+    "id": "IMG_055",
+    "concept": "Snow",
+    "kanji": "雪",
+    "candidate": 5,
+    "credit": "kbeis",
+    "sourceUrl": "https://www.istockphoto.com/vector/winter-landscape-with-snow-covered-trees-gm1355039197-429630975",
+    "assetId": "1355039197",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_055.jpg"
+  },
+  {
+    "id": "IMG_069",
+    "concept": "Horse",
+    "kanji": "馬",
+    "candidate": 1,
+    "credit": "georgeclerk",
+    "sourceUrl": "https://www.istockphoto.com/photo/wild-horses-running-free-gm1019461046-273973110",
+    "assetId": "1019461046",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.48,
+    "file": "assets/wall-crops/IMG_069.jpg"
+  },
+  {
+    "id": "IMG_100",
+    "concept": "Horse",
+    "kanji": "馬",
+    "candidate": 2,
+    "credit": "Abramova_Kseniya",
+    "sourceUrl": "https://www.istockphoto.com/photo/realistic-illustration-of-budenny-horse-galloping-gm95372811-5224529",
+    "assetId": "95372811",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.48,
+    "file": "assets/wall-crops/IMG_100.jpg"
+  },
+  {
+    "id": "IMG_059",
+    "concept": "Horse",
+    "kanji": "馬",
+    "candidate": 3,
+    "credit": "alacatr",
+    "sourceUrl": "https://www.istockphoto.com/photo/pair-of-running-horses-gm1925727931-555665581",
+    "assetId": "1925727931",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.48,
+    "file": "assets/wall-crops/IMG_059.jpg"
+  },
+  {
+    "id": "IMG_070",
+    "concept": "Horse",
+    "kanji": "馬",
+    "candidate": 4,
+    "credit": "Callipso",
+    "sourceUrl": "https://www.istockphoto.com/photo/horses-free-run-in-sandy-dust-gm1358464636-432082942",
+    "assetId": "1358464636",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.48,
+    "file": "assets/wall-crops/IMG_070.jpg"
+  },
+  {
+    "id": "IMG_053",
+    "concept": "Horse",
+    "kanji": "馬",
+    "candidate": 5,
+    "credit": "TAK",
+    "sourceUrl": "https://www.istockphoto.com/vector/new-years-greeting-card-material-for-the-year-2026-running-horse-and-golden-gm2208422677-625589474",
+    "assetId": "2208422677",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.48,
+    "file": "assets/wall-crops/IMG_053.jpg"
+  },
+  {
+    "id": "IMG_087",
+    "concept": "Cloud",
+    "kanji": "雲",
+    "candidate": 1,
+    "credit": "LiuNian",
+    "sourceUrl": "https://www.istockphoto.com/photo/copy-space-summer-blue-sky-and-white-clouds-abstract-background-gm2175571916-595117209",
+    "assetId": "2175571916",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.45,
+    "file": "assets/wall-crops/IMG_087.jpg"
+  },
+  {
+    "id": "IMG_099",
+    "concept": "Cloud",
+    "kanji": "雲",
+    "candidate": 2,
+    "credit": "xxmmxx",
+    "sourceUrl": "https://www.istockphoto.com/photo/clouds-on-sky-gm184103864-16699674",
+    "assetId": "184103864",
+    "set": "Primary",
+    "selected": true,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.45,
+    "file": "assets/wall-crops/IMG_099.jpg"
+  },
+  {
+    "id": "IMG_028",
+    "concept": "Cloud",
+    "kanji": "雲",
+    "candidate": 3,
+    "credit": "kbeis",
+    "sourceUrl": "https://www.istockphoto.com/vector/beautiful-cloudscape-gm1498066656-520224506",
+    "assetId": "1498066656",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.45,
+    "file": "assets/wall-crops/IMG_028.jpg"
+  },
+  {
+    "id": "IMG_092",
+    "concept": "Cloud",
+    "kanji": "雲",
+    "candidate": 4,
+    "credit": "GANNAMARTYSHEVA",
+    "sourceUrl": "https://www.istockphoto.com/photo/clear-blue-sky-and-white-clouds-gm2175419060-594980480",
+    "assetId": "2175419060",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.45,
+    "file": "assets/wall-crops/IMG_092.jpg"
+  },
+  {
+    "id": "IMG_008",
+    "concept": "Cloud",
+    "kanji": "雲",
+    "candidate": 5,
+    "credit": "Pobytov",
+    "sourceUrl": "https://www.istockphoto.com/vector/watercolor-summer-blue-sky-with-clouds-gm533720826-94560281",
+    "assetId": "533720826",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.45,
+    "file": "assets/wall-crops/IMG_008.jpg"
+  },
+  {
+    "id": "IMG_013",
+    "concept": "Fire",
+    "kanji": "火",
+    "candidate": 1,
+    "credit": "OlgaMiltsova",
+    "sourceUrl": "https://www.istockphoto.com/photo/fire-isolated-over-black-background-gm113494458-13617962",
+    "assetId": "113494458",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_013.jpg"
+  },
+  {
+    "id": "IMG_047",
+    "concept": "Fire",
+    "kanji": "火",
+    "candidate": 2,
+    "credit": "wirot pathi",
+    "sourceUrl": "https://www.istockphoto.com/photo/fire-png-burning-flame-isolated-on-a-black-background-gm2153242960-574192636",
+    "assetId": "2153242960",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_047.jpg"
+  },
+  {
+    "id": "IMG_032",
+    "concept": "Fire",
+    "kanji": "火",
+    "candidate": 3,
+    "credit": "Pleasureofart",
+    "sourceUrl": "https://www.istockphoto.com/photo/red-hot-flames-of-fire-isolated-on-black-gm183862714-16504676",
+    "assetId": "183862714",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_032.jpg"
+  },
+  {
+    "id": "IMG_064",
+    "concept": "Fire",
+    "kanji": "火",
+    "candidate": 4,
+    "credit": "flukesamed",
+    "sourceUrl": "https://www.istockphoto.com/photo/blaze-fire-flame-background-gm178420160-24505647",
+    "assetId": "178420160",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_064.jpg"
+  },
+  {
+    "id": "IMG_062",
+    "concept": "Fire",
+    "kanji": "火",
+    "candidate": 5,
+    "credit": "da-kuk",
+    "sourceUrl": "https://www.istockphoto.com/photo/fire-flames-gm174672136-9815355",
+    "assetId": "174672136",
+    "set": "Primary",
+    "selected": true,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.65,
+    "file": "assets/wall-crops/IMG_062.jpg"
+  },
+  {
+    "id": "IMG_001",
+    "concept": "Water",
+    "kanji": "水",
+    "candidate": 1,
+    "credit": "jurisam",
+    "sourceUrl": "https://www.istockphoto.com/photo/water-splash-gm476683764-66126943",
+    "assetId": "476683764",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.54,
+    "file": "assets/wall-crops/IMG_001.jpg"
+  },
+  {
+    "id": "IMG_088",
+    "concept": "Water",
+    "kanji": "水",
+    "candidate": 2,
+    "credit": "Jennifer_Sharp",
+    "sourceUrl": "https://www.istockphoto.com/photo/water-drop-gm157644325-13968176",
+    "assetId": "157644325",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.54,
+    "file": "assets/wall-crops/IMG_088.jpg"
+  },
+  {
+    "id": "IMG_068",
+    "concept": "Water",
+    "kanji": "水",
+    "candidate": 3,
+    "credit": "Avesun",
+    "sourceUrl": "https://www.istockphoto.com/photo/clear-blue-wavy-water-on-white-background-gm177860151-24185019",
+    "assetId": "177860151",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.54,
+    "file": "assets/wall-crops/IMG_068.jpg"
+  },
+  {
+    "id": "IMG_010",
+    "concept": "Water",
+    "kanji": "水",
+    "candidate": 4,
+    "credit": "IRA_EVVA",
+    "sourceUrl": "https://www.istockphoto.com/photo/blue-water-texture-blue-mint-water-surface-with-rings-and-ripples-spa-concept-gm1328350710-412435658",
+    "assetId": "1328350710",
+    "set": "Primary",
+    "selected": true,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.54,
+    "file": "assets/wall-crops/IMG_010.jpg"
+  },
+  {
+    "id": "IMG_023",
+    "concept": "Water",
+    "kanji": "水",
+    "candidate": 5,
+    "credit": "PORNTHIP ALOUNTHONG",
+    "sourceUrl": "https://www.istockphoto.com/photo/defocus-blurred-transparent-blue-colored-clear-calm-water-surface-texture-with-gm1470399051-501266731",
+    "assetId": "1470399051",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.54,
+    "file": "assets/wall-crops/IMG_023.jpg"
+  },
+  {
+    "id": "IMG_084",
+    "concept": "Waterfall",
+    "kanji": "滝",
+    "candidate": 1,
+    "credit": "Turnervisual",
+    "sourceUrl": "https://www.istockphoto.com/photo/peaceful-waterfall-gm172967978-6404701",
+    "assetId": "172967978",
+    "set": "Primary",
+    "selected": true,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.52,
+    "file": "assets/wall-crops/IMG_084.jpg"
+  },
+  {
+    "id": "IMG_029",
+    "concept": "Waterfall",
+    "kanji": "滝",
+    "candidate": 2,
+    "credit": "billberryphotography",
+    "sourceUrl": "https://www.istockphoto.com/photo/beautiful-rio-celeste-waterfall-gm470520510-62193784",
+    "assetId": "470520510",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.52,
+    "file": "assets/wall-crops/IMG_029.jpg"
+  },
+  {
+    "id": "IMG_097",
+    "concept": "Waterfall",
+    "kanji": "滝",
+    "candidate": 3,
+    "credit": "Danilo Andjus",
+    "sourceUrl": "https://www.istockphoto.com/photo/beautiful-waterfall-landscapes-in-iceland-during-winter-gm2175843497-595369475",
+    "assetId": "2175843497",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.52,
+    "file": "assets/wall-crops/IMG_097.jpg"
+  },
+  {
+    "id": "IMG_046",
+    "concept": "Waterfall",
+    "kanji": "滝",
+    "candidate": 4,
+    "credit": "Designer_things",
+    "sourceUrl": "https://www.istockphoto.com/vector/cartoon-river-cascade-waterfall-landscape-with-mountains-and-trees-design-element-gm2179147425-598396437",
+    "assetId": "2179147425",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.52,
+    "file": "assets/wall-crops/IMG_046.jpg"
+  },
+  {
+    "id": "IMG_041",
+    "concept": "Waterfall",
+    "kanji": "滝",
+    "candidate": 5,
+    "credit": "Orchidpoet",
+    "sourceUrl": "https://www.istockphoto.com/photo/niagara-falls-autumn-landscape-gm1275716095-375770937",
+    "assetId": "1275716095",
+    "set": "Primary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.52,
+    "file": "assets/wall-crops/IMG_041.jpg"
+  },
+  {
+    "id": "IMG_007",
+    "concept": "Cherry Blossom",
+    "kanji": "桜",
+    "candidate": 1,
+    "credit": "PongsakornJun",
+    "sourceUrl": "https://www.istockphoto.com/photo/pink-cherry-blossom-flower-gm512150982-87015791",
+    "assetId": "512150982",
+    "set": "Supplementary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_007.jpg"
+  },
+  {
+    "id": "IMG_051",
+    "concept": "Cherry Blossom",
+    "kanji": "桜",
+    "candidate": 2,
+    "credit": "syan",
+    "sourceUrl": "https://www.istockphoto.com/photo/sakura-flowers-in-the-garden-gm2199775070-617514254",
+    "assetId": "2199775070",
+    "set": "Supplementary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_051.jpg"
+  },
+  {
+    "id": "IMG_005",
+    "concept": "Cherry Blossom",
+    "kanji": "桜",
+    "candidate": 3,
+    "credit": "serts",
+    "sourceUrl": "https://www.istockphoto.com/photo/cherry-blossom-flowers-and-sunshine-gm1972338762-558506209",
+    "assetId": "1972338762",
+    "set": "Supplementary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_005.jpg"
+  },
+  {
+    "id": "IMG_048",
+    "concept": "Cherry Blossom",
+    "kanji": "桜",
+    "candidate": 4,
+    "credit": "onosan",
+    "sourceUrl": "https://www.istockphoto.com/photo/cherry-blossoms-in-full-bloom-in-park-gm1370295417-439874693",
+    "assetId": "1370295417",
+    "set": "Supplementary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_048.jpg"
+  },
+  {
+    "id": "IMG_104",
+    "concept": "Cherry Blossom",
+    "kanji": "桜",
+    "candidate": 5,
+    "credit": "AscentXmedia",
+    "sourceUrl": "https://www.istockphoto.com/photo/close-up-view-of-cherry-tree-blossoms-gm2171807372-591611001",
+    "assetId": "2171807372",
+    "set": "Supplementary",
+    "selected": false,
+    "outputSize": {
+      "width": 1920,
+      "height": 540
+    },
+    "cropCenterY": 0.5,
+    "file": "assets/wall-crops/IMG_104.jpg"
+  }
+]
