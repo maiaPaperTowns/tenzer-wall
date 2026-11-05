@@ -10,4 +10,4 @@ The default dataset contains only these five entries. The intro, buttons, theme,
 
 Validation: config validation and five-photo assertions passed; all five renderers exercised at animated and reduced-motion times; browser verified the intro, falling characters and photo activation. Physical-wall performance still needs hardware testing.
 
-The faculty Sheet crop column is verified. The existing Google Form crop update was started in place, preserving question IDs and response storage; completion could not yet be verified because the browser disconnected.
+The faculty Sheet crop column is verified. Google Form update logs confirm 100/100 image crops updated, with 100 answer fields preserved and zero existing responses. The Form's first image was visually verified in its 32:9 framing. Lexend remains in use. The Form remains an unpublished review draft.
