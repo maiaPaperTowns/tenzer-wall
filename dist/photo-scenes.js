@@ -34,15 +34,33 @@
             d+=vec2(sin(q.y*65.+time*1.3),cos(q.x*54.-time))* .0008;
             q+=d*(1.-credit);
           }else if(mode<2.5){
-            float light=smoothstep(.32,.72,dot(base,vec3(.299,.587,.114)));
-            float region=smoothstep(.04,.18,q.y)*(1.-smoothstep(.74,.89,q.y));
-            float flow=(sin(q.y*85.-time*13.+sin(q.x*27.))* .006+sin(q.y*173.-time*23.)*.002);
-            q.y+=flow*light*region*(1.-credit);
-            q.x+=sin(q.y*47.-time*8.)*.0018*light*region*(1.-credit);
+            // Advect the water texture downward, with two staggered passes.
+            // Crossfades conceal the loop reset; no oscillation of the rock face.
+            float light=smoothstep(.48,.82,dot(base,vec3(.299,.587,.114)));
+            float region=smoothstep(.03,.12,q.y)*(1.-smoothstep(.73,.86,q.y));
+            float a=fract(time*.32),b=fract(time*.32+.5);
+            float weight=abs(a-.5)*2.;
+            vec3 first=texture2D(photo,vec2(q.x,clamp(q.y-a*.075,.001,.999))).rgb;
+            vec3 second=texture2D(photo,vec2(q.x,clamp(q.y-b*.075,.001,.999))).rgb;
+            vec3 moving=mix(first,second,weight);
+            gl_FragColor=vec4(mix(base,moving,light*region*(1.-credit)*.88),1.);
+            return;
           }else if(mode>3.5){
-            float flame=smoothstep(.12,.38,base.r-base.b)*smoothstep(.25,.65,base.r);
-            q.x+=sin(q.y*31.-time*5.)*.006*flame*(1.-credit);
-            q.y+=sin(q.y*53.-time*8.)*.008*flame*(1.-credit);
+            // Warm bright pixels define the flame layer, separate from dark backdrop.
+            float flame=smoothstep(.10,.35,base.r-base.b)*smoothstep(.20,.62,base.r);
+            float liftA=fract(time*.48),liftB=fract(time*.48+.5);
+            float blend=abs(liftA-.5)*2.;
+            float wind=sin(q.y*15.-time*2.7+sin(q.x*19.))* .009;
+            float curl=sin(q.y*38.-time*5.4+q.x*23.)*.004;
+            vec2 qa=vec2(q.x+wind+curl,q.y+liftA*.065);
+            vec2 qb=vec2(q.x+wind+curl,q.y+liftB*.065);
+            vec3 first=texture2D(photo,clamp(qa,.001,.999)).rgb;
+            vec3 second=texture2D(photo,clamp(qb,.001,.999)).rgb;
+            vec3 burning=mix(first,second,blend);
+            float flicker=1.+.035*sin(time*7.3+q.x*29.)+.025*sin(time*11.7-q.y*21.);
+            burning*=flicker;
+            gl_FragColor=vec4(mix(base,burning,flame*(1.-credit)),1.);
+            return;
           }else{
             // Horizontal wind advection, with subtle different speeds by height.
             float wind=sin(time*.12)*.026+sin(time*.21+q.y*5.)*.005;
@@ -122,19 +140,7 @@
           }
         }
       } else if(motion==='waterfall') {
-        // Water follows the visible cascade channels; rock positions stay fixed.
-        const streams=[[.09,.18,.08,.76],[.27,.11,.12,.72],[.44,.17,.12,.78],[.65,.15,.23,.74],[.79,.12,.36,.72]];
-        for(let i=0;i<100;i++) {
-          const [left,width,top,bottom]=streams[i%streams.length];
-          const age=(noise(i+54)+t*(.48+noise(i+3)*.45))%1;
-          const px=pw*(left+noise(i+70)*width),py=ph*(top+(bottom-top)*age);
-          const len=ph*(.015+noise(i+19)*.07);
-          ctx.globalAlpha=fade*.28*Math.sin(age*Math.PI);
-          const streak=ctx.createLinearGradient(px,py-len,px,py);
-          streak.addColorStop(0,'rgba(235,251,255,0)');streak.addColorStop(1,'rgba(235,251,255,.85)');
-          ctx.strokeStyle=streak;ctx.lineWidth=Math.max(1,pw*.0012);
-          ctx.beginPath();ctx.moveTo(px,py-len);ctx.quadraticCurveTo(px+Math.sin(t*3+i)*pw*.002,py-len*.4,px,py);ctx.stroke();
-        }
+        // The shader advects only the bright water; the rock image remains fixed.
         for(let i=0;i<32;i++) {
           const a=(noise(i)+t*.24)%1,cx=pw*(.18+noise(i+5)*.7)+Math.sin(t+i)*ph*.015,cy=ph*(.79-a*.12),r=ph*(.015+a*.05);
           const mist=ctx.createRadialGradient(cx,cy,0,cx,cy,r);
