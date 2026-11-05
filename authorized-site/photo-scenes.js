@@ -1,9 +1,63 @@
 /* Five-photo wall test. Motion is composited over the complete source photographs. */
 (() => {
   const legacyDraw = window.drawStockScene;
-  const wallDisplay = new URLSearchParams(location.search).get('display') === 'wall';
+
   const TAU = Math.PI * 2;
   const noise = n => { const v=Math.sin(n*127.1+311.7)*43758.5453; return v-Math.floor(v); };
+  const fluidCache=new WeakMap();
+  function fluidFrame(image,t,kind) {
+    let state=fluidCache.get(image);
+    if(!state) {
+      const canvas=document.createElement('canvas');
+      canvas.width=Math.min(1280,image.naturalWidth);canvas.height=Math.round(canvas.width*image.naturalHeight/image.naturalWidth);
+      const gl=canvas.getContext('webgl',{alpha:false,preserveDrawingBuffer:true});
+      if(!gl)return null;
+      const shader=(type,source)=>{const sh=gl.createShader(type);gl.shaderSource(sh,source);gl.compileShader(sh);if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(sh));return sh;};
+      const program=gl.createProgram();
+      gl.attachShader(program,shader(gl.VERTEX_SHADER,'attribute vec2 p; varying vec2 uv; void main(){uv=vec2((p.x+1.)*.5,(1.-p.y)*.5);gl_Position=vec4(p,0.,1.);}'));
+      gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`precision mediump float;
+        varying vec2 uv;uniform sampler2D photo;uniform float time;uniform float mode;
+        void main(){
+          vec2 q=uv;vec3 base=texture2D(photo,q).rgb;
+          // Keep the stock credit region intact while preview assets are in use.
+          float credit=step(.59,q.x)*step(.55,q.y)*step(q.y,.78);
+          if(mode<1.5){
+            vec2 d=vec2(0.);
+            for(int i=0;i<5;i++){
+              float n=float(i);float age=mod(time+n*.83,3.8)-.65;
+              vec2 center=vec2(.31+mod(n*.137,.38),.46+mod(n*.173,.28));
+              vec2 v=(q-center)*vec2(1.,2.7);float r=length(v);
+              float ring=r-age*.16;
+              float envelope=exp(-ring*ring*500.)*exp(-max(age,0.)*.8)*step(0.,age);
+              d+=normalize(v+vec2(.0001))*sin(r*110.-age*18.)*envelope*.008;
+            }
+            d+=vec2(sin(q.y*65.+time*1.3),cos(q.x*54.-time))* .0008;
+            q+=d*(1.-credit);
+          }else if(mode<2.5){
+            float light=smoothstep(.32,.72,dot(base,vec3(.299,.587,.114)));
+            float region=smoothstep(.04,.18,q.y)*(1.-smoothstep(.74,.89,q.y));
+            float flow=(sin(q.y*85.-time*13.+sin(q.x*27.))* .006+sin(q.y*173.-time*23.)*.002);
+            q.y+=flow*light*region*(1.-credit);
+            q.x+=sin(q.y*47.-time*8.)*.0018*light*region*(1.-credit);
+          }else if(mode>3.5){
+            float flame=smoothstep(.12,.38,base.r-base.b)*smoothstep(.25,.65,base.r);
+            q.x+=sin(q.y*31.-time*5.)*.006*flame*(1.-credit);
+            q.y+=sin(q.y*53.-time*8.)*.008*flame*(1.-credit);
+          }else{
+            // Horizontal wind advection, with subtle different speeds by height.
+            float wind=sin(time*.12)*.026+sin(time*.21+q.y*5.)*.005;
+            q.x+=wind*(1.-credit);q.y+=sin(q.x*8.+time*.2)*.0015*(1.-credit);
+          }
+          gl_FragColor=vec4(texture2D(photo,clamp(q,.001,.999)).rgb,1.);
+        }`));
+      gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error('Photo animation shader failed to link');gl.useProgram(program);
+      const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+      const pos=gl.getAttribLocation(program,'p');gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+      gl.bindTexture(gl.TEXTURE_2D,gl.createTexture());gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
+      state={canvas,gl,program,time:gl.getUniformLocation(program,'time'),mode:gl.getUniformLocation(program,'mode')};fluidCache.set(image,state);
+    }
+    const {gl,canvas}=state;gl.viewport(0,0,canvas.width,canvas.height);gl.uniform1f(state.time,t);gl.uniform1f(state.mode,kind==='water'?1:kind==='waterfall'?2:kind==='fire'?4:3);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);return canvas;
+  }
   function drawPhoto(ctx,scene,fade,w,h,reduced) {
     const backdrop=scene.entry.images[0];
     const image=scene.entry.images[1] || backdrop;
@@ -16,11 +70,15 @@
     ctx.fillStyle='#eee8da';ctx.fillRect(0,0,w,h);
     ctx.translate(x,y);
     ctx.beginPath();ctx.rect(0,0,pw,ph);ctx.clip();
-    ctx.drawImage(image,0,0,pw,ph);
+    let surface=image;
+    if(!reduced && ['water','waterfall','cloud','fire'].includes(scene.entry.id)) {
+      try {surface=fluidFrame(image,t,scene.entry.id)||image;} catch(error) {if(!scene.fluidWarning){console.warn(error);scene.fluidWarning=true;}}
+    }
+    ctx.drawImage(surface,0,0,pw,ph);
     if(!reduced) {
       const motion=scene.entry.id;
       if(motion==='snow') {
-        for(let i=0;i<65;i++) {
+        for(let i=0;i<110;i++) {
           const depth=.35+noise(i+91)*.65;
           const px=((noise(i)*pw+t*ph*.035*depth+Math.sin(t*.5+i)*ph*.025)%(pw+16)+pw+16)%(pw+16)-8;
           const py=(noise(i+11)*ph+t*ph*(.035+.065*depth))%(ph+16)-8;
@@ -28,44 +86,60 @@
           ctx.arc(px,py,Math.max(.8,ph*.004*depth),0,TAU);ctx.fill();
         }
       } else if(motion==='cloud') {
-        // A slow camera drift gives the cloudscape visible continuous motion.
-        // Overscan prevents empty edges while keeping the photo proportional.
-        const zoom=1.045, dx=Math.sin(t*.11)*pw*.012,dy=Math.sin(t*.07)*ph*.009;
-        ctx.drawImage(image,-pw*(zoom-1)/2+dx,-ph*(zoom-1)/2+dy,pw*zoom,ph*zoom);
+        // Cloud movement is rendered directly from the original photograph above.
       } else if(motion==='fire') {
-        for(let row=0;row<ph;row+=4) {
-          const shift=Math.sin(row*.06-t*4.2)*ph*.0015+Math.sin(row*.13+t*2.9)*ph*.0007;
-          const sy=Math.max(0,Math.min(image.naturalHeight-5,(row/ph)*image.naturalHeight+Math.sin(t*5+row*.03)*2));
-          ctx.drawImage(image,0,sy,image.naturalWidth,Math.min(image.naturalHeight-sy,6/scale),shift,row,pw,6);
-        }
-        for(let i=0;i<14;i++) {
+        for(let i=0;i<36;i++) {
           const age=(noise(i+40)+t*.12) % 1,px=(noise(i+74)+Math.sin(t+i)*.008)*pw,py=ph*(1-age);
           ctx.globalAlpha=fade*(1-age)*.28;ctx.fillStyle=i%2?'#ffb84c':'#ffe4aa';
           ctx.beginPath();ctx.arc(px,py,Math.max(.65,ph*.0022),0,TAU);ctx.fill();
         }
       } else if(motion==='water') {
-        for(let i=0;i<4;i++) {
-          const phase=(t*.09+noise(i))%1,cx=pw*(.08+noise(i+30)*.84),cy=ph*(.12+noise(i+90)*.76),r=ph*(.025+phase*.3);
-          ctx.globalAlpha=fade*(1-phase)*.09;ctx.strokeStyle='#f0ffff';ctx.lineWidth=Math.max(.8,ph*.002);
-          ctx.beginPath();ctx.ellipse(cx,cy,r*1.8,r*.65,0,0,TAU);ctx.stroke();
-          ctx.save();ctx.beginPath();ctx.ellipse(cx,cy,r*1.75,r*.6,0,0,TAU);ctx.clip();
-          ctx.globalAlpha=fade*(1-phase)*.04;ctx.drawImage(image,Math.sin(t*2+i)*ph*.004,Math.cos(t*2+i)*ph*.003,pw,ph);ctx.restore();
+        // A drop accelerates toward the surface, then generates expanding rings.
+        for(let i=0;i<5;i++) {
+          const cycle=3.8,age=(t+i*.83)%cycle;
+          const cx=pw*(.31+(i*.137)%.38),cy=ph*(.46+(i*.173)%.28);
+          if(age<.65) {
+            const u=age/.65,dy=cy-ph*.38*(1-u*u);
+            ctx.globalAlpha=fade*.8;ctx.fillStyle='#e9ffff';
+            ctx.beginPath();ctx.ellipse(cx,dy,ph*.0025,ph*(.005+.009*u),0,0,TAU);ctx.fill();
+          } else {
+            const u=(age-.65)/(cycle-.65);
+            for(let ring=0;ring<3;ring++) {
+              const phase=u-ring*.075;if(phase<=0)continue;
+              const r=ph*(.006+phase*.29);
+              ctx.globalAlpha=fade*Math.pow(1-u,2)*(.55-ring*.1);
+              ctx.strokeStyle=ring%2?'#397c91':'#edffff';ctx.lineWidth=Math.max(1,ph*.002*(1-u));
+              ctx.beginPath();ctx.ellipse(cx,cy,r*1.8,r*.6,0,0,TAU);ctx.stroke();
+            }
+            if(u<.12) {
+              ctx.globalAlpha=fade*(1-u/.12)*.65;ctx.strokeStyle='#efffff';
+              for(let j=0;j<7;j++) {
+                const angle=j/7*TAU,dist=ph*u*.25;
+                const sx=cx+Math.cos(angle)*dist,sy=cy-Math.sin(j+1)*ph*u*.25;
+                ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(sx,sy-ph*.009);ctx.stroke();
+              }
+            }
+          }
         }
       } else if(motion==='waterfall') {
-        // Sample adjacent rows within the cascades. Rocks retain their position.
-        const streams=[[.04,.12],[.15,.18],[.37,.14],[.57,.12],[.76,.16]];
-        for(const [sx,sw] of streams) {
-          ctx.save();ctx.beginPath();ctx.rect(pw*sx,ph*.04,pw*sw,ph*.79);ctx.clip();
-          for(let row=0;row<ph*.84;row+=5) {
-            const sy=Math.max(0,Math.min(image.naturalHeight-8,row/ph*image.naturalHeight+Math.sin(row*.05-t*2.2)*.7));
-            ctx.globalAlpha=fade*.12;ctx.drawImage(image,image.naturalWidth*sx,sy,image.naturalWidth*sw,Math.min(8/scale,image.naturalHeight-sy),pw*sx,row,pw*sw,8);
-          }
-          ctx.restore();
+        // Water follows the visible cascade channels; rock positions stay fixed.
+        const streams=[[.09,.18,.08,.76],[.27,.11,.12,.72],[.44,.17,.12,.78],[.65,.15,.23,.74],[.79,.12,.36,.72]];
+        for(let i=0;i<100;i++) {
+          const [left,width,top,bottom]=streams[i%streams.length];
+          const age=(noise(i+54)+t*(.48+noise(i+3)*.45))%1;
+          const px=pw*(left+noise(i+70)*width),py=ph*(top+(bottom-top)*age);
+          const len=ph*(.015+noise(i+19)*.07);
+          ctx.globalAlpha=fade*.28*Math.sin(age*Math.PI);
+          const streak=ctx.createLinearGradient(px,py-len,px,py);
+          streak.addColorStop(0,'rgba(235,251,255,0)');streak.addColorStop(1,'rgba(235,251,255,.85)');
+          ctx.strokeStyle=streak;ctx.lineWidth=Math.max(1,pw*.0012);
+          ctx.beginPath();ctx.moveTo(px,py-len);ctx.quadraticCurveTo(px+Math.sin(t*3+i)*pw*.002,py-len*.4,px,py);ctx.stroke();
         }
-        for(let i=0;i<12;i++) {
-          const a=(noise(i)+t*.18)%1;
-          ctx.globalAlpha=fade*(1-a)*.025;ctx.fillStyle='#eefaff';ctx.beginPath();
-          ctx.ellipse(pw*noise(i+5)+Math.sin(t+i)*ph*.025,ph*(.89-a*.14),ph*(.035+a*.07),ph*(.01+a*.025),0,0,TAU);ctx.fill();
+        for(let i=0;i<32;i++) {
+          const a=(noise(i)+t*.24)%1,cx=pw*(.18+noise(i+5)*.7)+Math.sin(t+i)*ph*.015,cy=ph*(.79-a*.12),r=ph*(.015+a*.05);
+          const mist=ctx.createRadialGradient(cx,cy,0,cx,cy,r);
+          mist.addColorStop(0,`rgba(239,251,255,${(1-a)*.12})`);mist.addColorStop(1,'rgba(239,251,255,0)');
+          ctx.globalAlpha=fade;ctx.fillStyle=mist;ctx.fillRect(cx-r,cy-r,r*2,r*2);
         }
       }
     }
