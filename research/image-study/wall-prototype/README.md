@@ -1,3 +1,7 @@
+## Web and projection display
+
+The default web URL shows a single complete photograph, scaled proportionally to the viewport, with a neutral background in unused space. No blurred duplicate is drawn. Projection uses `?display=wall`, which fills the viewport with a centered crop of the original. Review frames in Sheet/Form retain complete originals.
+
 ## Full-subject framing update
 
 All 105 review frames retain the complete original photograph, centered within a 1920 × 540 frame. A blurred copy fills unused width. The wall fits the complete selected original inside the viewport. Watermarks remain intact. Motion is restrained to avoid distracting distortion.
