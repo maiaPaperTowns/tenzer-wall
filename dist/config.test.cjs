@@ -13,6 +13,6 @@ assert.equal(custom.sound.src,'https://example.test/tenzer/sound.mp3');
 console.log('Config validation: 15 assertions passed.');
 const photo=validate(require('./config.json'),base);
 assert.deepEqual(photo.entries.map(e=>e.id),['snow','cloud','fire','water','waterfall']);
-assert(photo.entries.every(e=>e.options.photoPrototype===1 && e.assets.length===1));
+assert(photo.entries.every(e=>e.options.photoPrototype===1 && e.assets.length===2));
 assert.equal(new Set(photo.entries.map(e=>e.reviewImageId)).size,5);
 console.log('Five-photo dataset: correct characters and one distinct photo per character.');

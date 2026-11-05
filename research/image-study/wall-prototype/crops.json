@@ -13,8 +13,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_081.jpg"
+    "file": "assets/wall-fit/IMG_081.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_039",
@@ -30,8 +31,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_039.jpg"
+    "file": "assets/wall-fit/IMG_039.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_038",
@@ -47,8 +49,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_038.jpg"
+    "file": "assets/wall-fit/IMG_038.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_089",
@@ -64,8 +67,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_089.jpg"
+    "file": "assets/wall-fit/IMG_089.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_037",
@@ -81,8 +85,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_037.jpg"
+    "file": "assets/wall-fit/IMG_037.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_003",
@@ -98,8 +103,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.43,
-    "file": "assets/wall-crops/IMG_003.jpg"
+    "file": "assets/wall-fit/IMG_003.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_057",
@@ -115,8 +121,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.43,
-    "file": "assets/wall-crops/IMG_057.jpg"
+    "file": "assets/wall-fit/IMG_057.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_085",
@@ -132,8 +139,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.43,
-    "file": "assets/wall-crops/IMG_085.jpg"
+    "file": "assets/wall-fit/IMG_085.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_018",
@@ -149,8 +157,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.43,
-    "file": "assets/wall-crops/IMG_018.jpg"
+    "file": "assets/wall-fit/IMG_018.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_103",
@@ -166,8 +175,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.43,
-    "file": "assets/wall-crops/IMG_103.jpg"
+    "file": "assets/wall-fit/IMG_103.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_073",
@@ -183,8 +193,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_073.jpg"
+    "file": "assets/wall-fit/IMG_073.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_015",
@@ -200,8 +211,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_015.jpg"
+    "file": "assets/wall-fit/IMG_015.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_072",
@@ -217,8 +229,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_072.jpg"
+    "file": "assets/wall-fit/IMG_072.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_090",
@@ -234,8 +247,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_090.jpg"
+    "file": "assets/wall-fit/IMG_090.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_025",
@@ -251,8 +265,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_025.jpg"
+    "file": "assets/wall-fit/IMG_025.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_077",
@@ -268,8 +283,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_077.jpg"
+    "file": "assets/wall-fit/IMG_077.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_091",
@@ -285,8 +301,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_091.jpg"
+    "file": "assets/wall-fit/IMG_091.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_080",
@@ -302,8 +319,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_080.jpg"
+    "file": "assets/wall-fit/IMG_080.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_012",
@@ -319,8 +337,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_012.jpg"
+    "file": "assets/wall-fit/IMG_012.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_019",
@@ -336,8 +355,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_019.jpg"
+    "file": "assets/wall-fit/IMG_019.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_058",
@@ -353,8 +373,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_058.jpg"
+    "file": "assets/wall-fit/IMG_058.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_050",
@@ -370,8 +391,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_050.jpg"
+    "file": "assets/wall-fit/IMG_050.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_014",
@@ -387,8 +409,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_014.jpg"
+    "file": "assets/wall-fit/IMG_014.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_063",
@@ -404,8 +427,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_063.jpg"
+    "file": "assets/wall-fit/IMG_063.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_052",
@@ -421,8 +445,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_052.jpg"
+    "file": "assets/wall-fit/IMG_052.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_096",
@@ -438,8 +463,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_096.jpg"
+    "file": "assets/wall-fit/IMG_096.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_006",
@@ -455,8 +481,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_006.jpg"
+    "file": "assets/wall-fit/IMG_006.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_076",
@@ -472,8 +499,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_076.jpg"
+    "file": "assets/wall-fit/IMG_076.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_095",
@@ -489,8 +517,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_095.jpg"
+    "file": "assets/wall-fit/IMG_095.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_071",
@@ -506,8 +535,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_071.jpg"
+    "file": "assets/wall-fit/IMG_071.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_036",
@@ -523,8 +553,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_036.jpg"
+    "file": "assets/wall-fit/IMG_036.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_040",
@@ -540,8 +571,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_040.jpg"
+    "file": "assets/wall-fit/IMG_040.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_045",
@@ -557,8 +589,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_045.jpg"
+    "file": "assets/wall-fit/IMG_045.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_078",
@@ -574,8 +607,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_078.jpg"
+    "file": "assets/wall-fit/IMG_078.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_067",
@@ -591,8 +625,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_067.jpg"
+    "file": "assets/wall-fit/IMG_067.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_031",
@@ -608,8 +643,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.47,
-    "file": "assets/wall-crops/IMG_031.jpg"
+    "file": "assets/wall-fit/IMG_031.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_020",
@@ -625,8 +661,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.47,
-    "file": "assets/wall-crops/IMG_020.jpg"
+    "file": "assets/wall-fit/IMG_020.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_094",
@@ -642,8 +679,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.47,
-    "file": "assets/wall-crops/IMG_094.jpg"
+    "file": "assets/wall-fit/IMG_094.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_017",
@@ -659,8 +697,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.47,
-    "file": "assets/wall-crops/IMG_017.jpg"
+    "file": "assets/wall-fit/IMG_017.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_093",
@@ -676,8 +715,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.47,
-    "file": "assets/wall-crops/IMG_093.jpg"
+    "file": "assets/wall-fit/IMG_093.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_065",
@@ -693,8 +733,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_065.jpg"
+    "file": "assets/wall-fit/IMG_065.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_060",
@@ -710,8 +751,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_060.jpg"
+    "file": "assets/wall-fit/IMG_060.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_061",
@@ -727,8 +769,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_061.jpg"
+    "file": "assets/wall-fit/IMG_061.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_086",
@@ -744,8 +787,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_086.jpg"
+    "file": "assets/wall-fit/IMG_086.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_011",
@@ -761,8 +805,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_011.jpg"
+    "file": "assets/wall-fit/IMG_011.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_034",
@@ -778,8 +823,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_034.jpg"
+    "file": "assets/wall-fit/IMG_034.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_079",
@@ -795,8 +841,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_079.jpg"
+    "file": "assets/wall-fit/IMG_079.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_002",
@@ -812,8 +859,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_002.jpg"
+    "file": "assets/wall-fit/IMG_002.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_049",
@@ -829,8 +877,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_049.jpg"
+    "file": "assets/wall-fit/IMG_049.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_030",
@@ -846,8 +895,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_030.jpg"
+    "file": "assets/wall-fit/IMG_030.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_004",
@@ -863,8 +913,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_004.jpg"
+    "file": "assets/wall-fit/IMG_004.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_033",
@@ -880,8 +931,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_033.jpg"
+    "file": "assets/wall-fit/IMG_033.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_043",
@@ -897,8 +949,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_043.jpg"
+    "file": "assets/wall-fit/IMG_043.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_009",
@@ -914,8 +967,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_009.jpg"
+    "file": "assets/wall-fit/IMG_009.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_082",
@@ -931,8 +985,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_082.jpg"
+    "file": "assets/wall-fit/IMG_082.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_066",
@@ -948,8 +1003,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_066.jpg"
+    "file": "assets/wall-fit/IMG_066.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_102",
@@ -965,8 +1021,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_102.jpg"
+    "file": "assets/wall-fit/IMG_102.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_101",
@@ -982,8 +1039,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_101.jpg"
+    "file": "assets/wall-fit/IMG_101.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_044",
@@ -999,8 +1057,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_044.jpg"
+    "file": "assets/wall-fit/IMG_044.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_035",
@@ -1016,8 +1075,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_035.jpg"
+    "file": "assets/wall-fit/IMG_035.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_056",
@@ -1033,8 +1093,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_056.jpg"
+    "file": "assets/wall-fit/IMG_056.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_026",
@@ -1050,8 +1111,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_026.jpg"
+    "file": "assets/wall-fit/IMG_026.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_027",
@@ -1067,8 +1129,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_027.jpg"
+    "file": "assets/wall-fit/IMG_027.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_016",
@@ -1084,8 +1147,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_016.jpg"
+    "file": "assets/wall-fit/IMG_016.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_022",
@@ -1101,8 +1165,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_022.jpg"
+    "file": "assets/wall-fit/IMG_022.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_098",
@@ -1118,8 +1183,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_098.jpg"
+    "file": "assets/wall-fit/IMG_098.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_021",
@@ -1135,8 +1201,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_021.jpg"
+    "file": "assets/wall-fit/IMG_021.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_074",
@@ -1152,8 +1219,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_074.jpg"
+    "file": "assets/wall-fit/IMG_074.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_042",
@@ -1169,8 +1237,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_042.jpg"
+    "file": "assets/wall-fit/IMG_042.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_083",
@@ -1186,8 +1255,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_083.jpg"
+    "file": "assets/wall-fit/IMG_083.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_105",
@@ -1203,8 +1273,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_105.jpg"
+    "file": "assets/wall-fit/IMG_105.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_024",
@@ -1220,8 +1291,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_024.jpg"
+    "file": "assets/wall-fit/IMG_024.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_075",
@@ -1237,8 +1309,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_075.jpg"
+    "file": "assets/wall-fit/IMG_075.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_054",
@@ -1254,8 +1327,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_054.jpg"
+    "file": "assets/wall-fit/IMG_054.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_055",
@@ -1271,8 +1345,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_055.jpg"
+    "file": "assets/wall-fit/IMG_055.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_069",
@@ -1288,8 +1363,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.48,
-    "file": "assets/wall-crops/IMG_069.jpg"
+    "file": "assets/wall-fit/IMG_069.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_100",
@@ -1305,8 +1381,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.48,
-    "file": "assets/wall-crops/IMG_100.jpg"
+    "file": "assets/wall-fit/IMG_100.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_059",
@@ -1322,8 +1399,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.48,
-    "file": "assets/wall-crops/IMG_059.jpg"
+    "file": "assets/wall-fit/IMG_059.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_070",
@@ -1339,8 +1417,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.48,
-    "file": "assets/wall-crops/IMG_070.jpg"
+    "file": "assets/wall-fit/IMG_070.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_053",
@@ -1356,8 +1435,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.48,
-    "file": "assets/wall-crops/IMG_053.jpg"
+    "file": "assets/wall-fit/IMG_053.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_087",
@@ -1373,8 +1453,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.45,
-    "file": "assets/wall-crops/IMG_087.jpg"
+    "file": "assets/wall-fit/IMG_087.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_099",
@@ -1390,8 +1471,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.45,
-    "file": "assets/wall-crops/IMG_099.jpg"
+    "file": "assets/wall-fit/IMG_099.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_028",
@@ -1407,8 +1489,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.45,
-    "file": "assets/wall-crops/IMG_028.jpg"
+    "file": "assets/wall-fit/IMG_028.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_092",
@@ -1424,8 +1507,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.45,
-    "file": "assets/wall-crops/IMG_092.jpg"
+    "file": "assets/wall-fit/IMG_092.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_008",
@@ -1441,8 +1525,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.45,
-    "file": "assets/wall-crops/IMG_008.jpg"
+    "file": "assets/wall-fit/IMG_008.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_013",
@@ -1458,8 +1543,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_013.jpg"
+    "file": "assets/wall-fit/IMG_013.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_047",
@@ -1475,8 +1561,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_047.jpg"
+    "file": "assets/wall-fit/IMG_047.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_032",
@@ -1492,8 +1579,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_032.jpg"
+    "file": "assets/wall-fit/IMG_032.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_064",
@@ -1509,8 +1597,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_064.jpg"
+    "file": "assets/wall-fit/IMG_064.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_062",
@@ -1526,8 +1615,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.65,
-    "file": "assets/wall-crops/IMG_062.jpg"
+    "file": "assets/wall-fit/IMG_062.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_001",
@@ -1543,8 +1633,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.54,
-    "file": "assets/wall-crops/IMG_001.jpg"
+    "file": "assets/wall-fit/IMG_001.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_088",
@@ -1560,8 +1651,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.54,
-    "file": "assets/wall-crops/IMG_088.jpg"
+    "file": "assets/wall-fit/IMG_088.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_068",
@@ -1577,8 +1669,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.54,
-    "file": "assets/wall-crops/IMG_068.jpg"
+    "file": "assets/wall-fit/IMG_068.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_010",
@@ -1594,8 +1687,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.54,
-    "file": "assets/wall-crops/IMG_010.jpg"
+    "file": "assets/wall-fit/IMG_010.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_023",
@@ -1611,8 +1705,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.54,
-    "file": "assets/wall-crops/IMG_023.jpg"
+    "file": "assets/wall-fit/IMG_023.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_084",
@@ -1628,8 +1723,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.52,
-    "file": "assets/wall-crops/IMG_084.jpg"
+    "file": "assets/wall-fit/IMG_084.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_029",
@@ -1645,8 +1741,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.52,
-    "file": "assets/wall-crops/IMG_029.jpg"
+    "file": "assets/wall-fit/IMG_029.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_097",
@@ -1662,8 +1759,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.52,
-    "file": "assets/wall-crops/IMG_097.jpg"
+    "file": "assets/wall-fit/IMG_097.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_046",
@@ -1679,8 +1777,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.52,
-    "file": "assets/wall-crops/IMG_046.jpg"
+    "file": "assets/wall-fit/IMG_046.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_041",
@@ -1696,8 +1795,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.52,
-    "file": "assets/wall-crops/IMG_041.jpg"
+    "file": "assets/wall-fit/IMG_041.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_007",
@@ -1713,8 +1813,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_007.jpg"
+    "file": "assets/wall-fit/IMG_007.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_051",
@@ -1730,8 +1831,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_051.jpg"
+    "file": "assets/wall-fit/IMG_051.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_005",
@@ -1747,8 +1849,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_005.jpg"
+    "file": "assets/wall-fit/IMG_005.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_048",
@@ -1764,8 +1867,9 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_048.jpg"
+    "file": "assets/wall-fit/IMG_048.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   },
   {
     "id": "IMG_104",
@@ -1781,7 +1885,8 @@
       "width": 1920,
       "height": 540
     },
-    "cropCenterY": 0.5,
-    "file": "assets/wall-crops/IMG_104.jpg"
+    "file": "assets/wall-fit/IMG_104.jpg",
+    "framing": "complete source photo with blurred background",
+    "sourceCropping": false
   }
 ]

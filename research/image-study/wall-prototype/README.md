@@ -1,3 +1,7 @@
+## Full-subject framing update
+
+All 105 review frames retain the complete original photograph, centered within a 1920 × 540 frame. A blurred copy fills unused width. The wall fits the complete selected original inside the viewport. Watermarks remain intact. Motion is restrained to avoid distracting distortion.
+
 # Five-photo wall test
 
 November 5, 2026. Active characters: Snow 雪 (IMG_105), Cloud 雲 (IMG_099), Fire 火 (IMG_062), Water 水 (IMG_010), Waterfall 滝 (IMG_084).
