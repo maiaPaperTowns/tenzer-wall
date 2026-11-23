@@ -24,21 +24,12 @@
     q=clamp(contained,.001,.999);
     vec3 col=samplePhoto(q);
     if(mode<.5){
-      // Isolate the moon's circular disc from its existing black backdrop.
-      vec2 moon=(screen-vec2(.58,.43))*vec2(ar,1.);
-      float radius=min(.31,ar*.30);vec2 mq=vec2(.5,.51)+moon/radius*vec2(.251,.376);
-      float disc=1.-smoothstep(.985,1.005,length(moon)/radius);
-      vec3 lunar=samplePhoto(mq);float glow=exp(-length(moon)*length(moon)/(radius*radius*1.4));
-      col=vec3(.006,.013,.026)+vec3(.035,.058,.09)*glow*(.94+.06*sin(t*.3));
-      col=mix(col,lunar,disc);
-      // Wide, softly feathered wisps drift in front of the moon, never a hard stripe.
-      float cloud=fbm(vec2(screen.x*3.-t*.012,screen.y*6.+.4));
-      float band=exp(-pow((screen.y-(.62+.035*sin(screen.x*4.+t*.09)))*8.,2.));
-      float veil=smoothstep(.42,.8,cloud)*band*.22;
-      col=mix(col,vec3(.12,.17,.23),veil*moving);
-      vec2 starGrid=screen*vec2(170.,110.);float starSeed=hash(floor(starGrid));
-      float star=step(.987,starSeed)*(1.-smoothstep(.025,.16,length(fract(starGrid)-.5)))*.42;
-      col+=star*(.5+.5*sin(t*.6+screen.x*40.))*(1.-disc)*(1.-smoothstep(.2,.7,screen.y));
+      // Original lunar pixels, size and final placement; no invented sky or scenery.
+      // Six-second rise (previous generated version took 28 seconds).
+      float progress=smoothstep(0.,6.,t);
+      vec2 mq=contained-vec2(0.,.90*(1.-progress)*moving);
+      float visible=step(0.,mq.x)*step(mq.x,1.)*step(0.,mq.y)*step(mq.y,1.);
+      col=samplePhoto(mq)*visible;
     }else if(mode<1.5){
       float region=texture2D(mask,q).r;
       // Two phase-offset flow samples avoid resets and keep rocks/trees stationary.
@@ -74,6 +65,9 @@
       float feather=smoothstep(0.,.028,min(min(contained.x,1.-contained.x),min(contained.y,1.-contained.y)));
       col=mix(surround,col,inside*feather);
     }
+    // Quiet, fixed paper tooth only; do not repaint or change the photo palette.
+    float paper=(hash(floor(q*imageSize*1.5))-.5)*.012;
+    col*=1.+paper;
     col*=mix(.0,1.,entrance);gl_FragColor=vec4(col,1.);
   }`;
   function shader(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;}
@@ -89,6 +83,7 @@
   const soft=document.createElement('canvas');soft.width=724;soft.height=483;const sc=soft.getContext('2d');sc.fillStyle='black';sc.fillRect(0,0,724,483);sc.filter='blur(4px)';sc.drawImage(mask,0,0);const maskTexture=texture(soft);
   const photoTextures=new WeakMap();
   const previous=window.drawStockScene;
+  window.TenzerPhotoMotion={moonRiseSeconds:6};
   window.drawStockScene=function(ctx,scene,fade,w,h,reducedMotion){
     const mode=['moon','river','fish'].indexOf(scene.entry.id);
     if(mode<0){previous(ctx,scene,fade,w,h,reducedMotion);return;}
